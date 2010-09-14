@@ -1,8 +1,8 @@
 up.front.ug
 ===========
 
-Welcome to our shiny new website repository for the up.front Usergroup.
-
-You can find us on http://up.front.ug or follow us on http://twitter.com/upfront_ug.
+* **Website**: http://up.front.ug
+* **Twitter**: http://twitter.com/upfront_ug
+* **Google Group**: http://groups.google.com/group/upfront_ug
 
 Please push to gh-pages branch for website updates
