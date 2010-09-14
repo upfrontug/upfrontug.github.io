@@ -37,12 +37,12 @@ h1 {
 h2 {
   font-size: 2em;
   margin-bottom: 0.75em;
-  border-top: 1px solid #FF6A00;
-  border-bottom: 1px solid #FF6A00;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
 }
 h2 span {
   display: block;
-  background: #FF6A00;
+  background: #999;
   margin: .25em 0;
   color: #FFF;
   text-align: center;
@@ -116,7 +116,7 @@ ul {
   padding: 1.5em 0 0 0;
   list-style: none;
   overflow: hidden;
-  border-bottom: 1px solid #FF6A00;
+  border-bottom: 1px solid #999;
 }
 
 ul li {
@@ -152,6 +152,19 @@ ul li p {
   margin-right: 0;
 }
 
+
+/* article for next meetup has orange highlights */
+.next h2 {
+  border-top: 1px solid #FF6A00;
+  border-bottom: 1px solid #FF6A00;
+}
+.next h2 span {
+  background: #FF6A00;
+}
+
+.next ul {
+  border-bottom: 1px solid #FF6A00;
+}
 
 @media screen and (max-device-width: 750px), screen and (max-width: 750px) {
   .container {
