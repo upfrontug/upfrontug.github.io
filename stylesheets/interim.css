@@ -85,8 +85,12 @@ em {
   margin:0 0 0 -240px;
   padding:0;
 }
+#logo a:hover {
+  background-position: 0 0;
+}
+
 #logo a {
-  background: url(../images/logo.png) no-repeat;
+  background: url(../images/logo.png) no-repeat -426px 0;
   display:block;
   width: 240px;
   height: 214px;
@@ -225,7 +229,7 @@ article:hover header {
   border-color: rgb(255,106,0); 
 }
 .next h2,
-article:hover h2 { 
+aerticle:hover h2 { 
   color: #fff; 
   background: rgb(255,106,0); 
 }
