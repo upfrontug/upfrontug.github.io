@@ -220,27 +220,33 @@ article.next h2 {
 /*
 colors
 */
-.next header { 
+.next header,
+article:hover header { 
   border-color: rgb(255,106,0); 
 }
-.next h2 { 
+.next h2,
+article:hover h2 { 
   color: #fff; 
   background: rgb(255,106,0); 
 }
-.next {
+.next,
+article:hover {
   color: rgb(255,106,0); 
 }
 
 .next p,
 footer,
-.next h4 { 
+.next h4,
+article:hover { 
   color:rgb(0,0,0); 
 }
 .next a, 
 .intro a,
 footer a,
 .next a:link, 
-.next a:visited {
+.next a:visited, 
+article:hover a
+{
   color: rgb(255,106,0) !important;
 }
 
