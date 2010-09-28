@@ -15,11 +15,10 @@ html {font-size:100.01%;}
 body {
   font-size: 100%;  
   font-family: Baskerville, "Baskerville old face", "Hoefler Text", Garamond, "Times New Roman", serif;
-  color: #111;
+  color: rgba(0,0,0,0.25);
 }
-
-header {
-  text-align: center;
+#wrap {
+  overflow-x:hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,22 +31,22 @@ h1 {
   margin-top: 1em;
   font-size: 4.5em;
   text-transform: uppercase;
-  color: #FF6A00;
+  color: rgb(255,106,0);
 }
 h2 {
   font-size: 2em;
-  margin-bottom: 0.75em;
+  /*margin-bottom: 0.75em;
   border-top: 1px solid #999;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #999;*/
 }
-h2 span {
+/*h2 span {
   display: block;
   background: #999;
   margin: .25em 0;
   color: #FFF;
   text-align: center;
   padding: 1em 0;
-}
+}*/
 h3 {
   font-size: 1.5em;
   line-height: 1;
@@ -55,12 +54,12 @@ h3 {
   font-weight: bold;
 }
 h4 {
-  font-size: 1em;
+  font-size: 1.5em;
   margin-bottom: 1.5em;
   min-height: 4.5em;
   height:auto !important;
   height: 4.5em;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 p {
@@ -74,22 +73,42 @@ em {
 
 /* layout */
 .container{
-  width: 95%;
-  max-width: 760px;
+  width: 100%;
+  max-width: 720px;
+  padding-left:240px;
   margin: 1.5em auto 4.5em auto;
+}
+#logo {
+  width: 240px;
+  float:left;
+  font-size:1em;
+  margin:0 0 0 -240px;
+  padding:0;
+}
+#logo a {
+  background: url(../images/logo.png) no-repeat;
+  display:block;
+  width: 240px;
+  height: 214px;
+}
+.intro {
+  font-size: 1.25em;
+  font-style: italic;
+  float:left;
+  margin:1em 0 3.5em 0;
+  text-align: center;
+  color: rgb(0,0,0);
 }
 
 /* meetup containers (articles) */
 
 article {
   margin-bottom: 6em;
+  clear:left;
 }
 
 /* paragraphs */
-.intro {
-  font-size: 1.5em;
-  font-style: italic;
-}
+
 
 
 /* links */
@@ -98,7 +117,7 @@ a,
 a:link, 
 a:visited {
   padding: 0 1px;
-  color: #FF6A00;
+  color: rgb(255,198,157);
   text-decoration: underline;
 }
 
@@ -106,9 +125,10 @@ a:hover,
 a:active, 
 a:focus {
   color: #FFF;
-  background-color: #FF6A00;
+  background-color: rgb(255,198,157);
   text-decoration: underline;
 }
+
 
 /* lists */
 ul {
@@ -134,10 +154,10 @@ ul.two li {
   width: 47%;
 }
 
-ul li:hover {
+/*ul li:hover {
   background: #FFEBDD;
   background: rgba(255, 106, 0, .05);
-}
+}*/
 
 ul li h4,
 ul li p {
@@ -152,19 +172,84 @@ ul li p {
   margin-right: 0;
 }
 
+article header {
+}
+
+article header {
+  border-color: rgb(255,198,157);
+  border-top: 1px solid rgb(255,198,157);
+  border-bottom: 1px solid rgb(255,198,157);
+  border-right: 2280px solid rgb(255,198,157);
+  border-left:0;
+  margin-right: -2280px;
+  margin-bottom: 3em;
+  width:720px;
+}
 
 /* article for next meetup has orange highlights */
-.next h2 {
-  border-top: 1px solid #FF6A00;
-  border-bottom: 1px solid #FF6A00;
+article h2 {
+  padding: .5em 2280px .5em 0;
+  margin: 0 -2280px 0 0;
+  width: 720px;
+  border-top: .25em solid #fff;
+  border-bottom: .25em solid #fff;
+  color: #fff;
+  background: rgb(255,198,157);
+  text-align:right;
 }
-.next h2 span {
-  background: #FF6A00;
+
+article.next header {
+  border-left: 2280px solid rgb(255,106,0);
+  border-right:0;
+  margin-left:-2280px;
+  margin-bottom: 3em;
+}
+article.next h2 {
+  padding: .5em 0 .5em 0;
+  margin: 0 0 0 0;
+  text-align:left;
+  color: #fff;
+  padding: .5em 0 .5em 2280px;
+  margin: 0 0 0 -2280px;
 }
 
 .next ul {
-  border-bottom: 1px solid #FF6A00;
+  border-bottom: 1px solid rgb(255,106,0);
 }
+
+/*
+colors
+*/
+.next header { 
+  border-color: rgb(255,106,0); 
+}
+.next h2 { 
+  color: #fff; 
+  background: rgb(255,106,0); 
+}
+.next {
+  color: rgb(255,106,0); 
+}
+
+.next p,
+footer,
+.next h4 { 
+  color:rgb(0,0,0); 
+}
+.next a, 
+.intro a,
+footer a,
+.next a:link, 
+.next a:visited {
+  color: rgb(255,106,0) !important;
+}
+
+.next a:hover, 
+.next a:active, 
+.next a:focus {
+  background-color: rgb(255,106,0);
+}
+
 
 @media screen and (max-device-width: 750px), screen and (max-width: 750px) {
   .container {
