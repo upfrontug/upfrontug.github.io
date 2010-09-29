@@ -9,176 +9,40 @@ blockquote:before, blockquote:after, q:before, q:after {content:"";}
 blockquote, q {quotes:"" "";}
 a img {border:none;}
 
-
 /* typography.css */
 html {font-size:100.01%;}
-body {
-  font-size: 100%;  
-  font-family: Baskerville, "Baskerville old face", "Hoefler Text", Garamond, "Times New Roman", serif;
-  color: rgba(0,0,0,0.25);
-}
-#wrap {
-  overflow-x:hidden;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight:normal
-  color: #111;
-}
-h1 {
-  line-height: 1;
-  margin-bottom: 0.5em;
-  margin-top: 1em;
-  font-size: 4.5em;
-  text-transform: uppercase;
-  color: rgb(255,106,0);
-}
-h2 {
-  font-size: 2em;
-  /*margin-bottom: 0.75em;
-  border-top: 1px solid #999;
-  border-bottom: 1px solid #999;*/
-}
-/*h2 span {
-  display: block;
-  background: #999;
-  margin: .25em 0;
-  color: #FFF;
-  text-align: center;
-  padding: 1em 0;
-}*/
-h3 {
-  font-size: 1.5em;
-  line-height: 1;
-  margin-bottom: 1em;
-  font-weight: bold;
-}
-h4 {
-  font-size: 1.5em;
-  margin-bottom: 1.5em;
-  min-height: 4.5em;
-  height:auto !important;
-  height: 4.5em;
-  font-weight: 400;
-}
-
-p {
-  margin: 0 0 1.5em;
-}
-
-em {
-  font-weight: normal;
-  font-style: italic;
-}
+body{font-size:100%;font-family:Baskerville,"Baskerville old face","Hoefler Text",Garamond,"Times New Roman",serif;color:rgba(0,0,0,0.25);}
+#wrap{overflow-x:hidden;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;color:#111;}
+h1{line-height:1;margin-bottom:0.5em;margin-top:1em;font-size:4.5em;text-transform:uppercase;color:rgb(255,106,0);}
+h3{font-size:1.5em;line-height:1;margin-bottom:1em;font-weight:bold;}
+h4{font-size:1.5em;margin-bottom:1.5em;min-height:4.5em;height:auto !important;height:4.5em;font-weight:400;color:rgba(0,0,0,0.25);}
+p{margin:0 0 1.5em;}
+em{font-weight:normal;font-style:italic;}
+aside{font-size:1.25em;font-style:italic;float:left;margin:1em 0 3.5em 0;text-align:center;color:rgb(0,0,0);}
 
 /* layout */
-.container{
-  width: 100%;
-  max-width: 720px;
-  padding-left:240px;
-  margin: 1.5em auto 4.5em auto;
-}
-#logo {
-  width: 240px;
-  float:left;
-  font-size:1em;
-  margin:0 0 0 -240px;
-  padding:0;
-}
-#logo a:hover {
-  background-position: 0 0;
-}
-
-#logo a {
-  background: url(../images/logo-b.png) no-repeat -426px 0;
-  display:block;
-  width: 240px;
-  height: 214px;
-}
-.intro {
-  font-size: 1.25em;
-  font-style: italic;
-  float:left;
-  margin:1em 0 3.5em 0;
-  text-align: center;
-  color: rgb(0,0,0);
-}
-
-/* meetup containers (articles) */
-
+.container{width:100%;max-width:720px;padding-left:240px;margin:1.5em auto 4.5em auto;}
+#logo{width:240px;float:left;font-size:1em;margin:0 0 0 -240px;padding:0;}
+#logo a:hover{background-position:-426px 0;}
+#logo a{background:url(../images/logo-b.png) no-repeat 0 0;display:block;width:240px;height:214px;}
 article {
   margin-bottom: 6em;
   clear:left;
 }
 
-/* paragraphs */
-
-
-
-/* links */
-
-a, 
-a:link, 
-a:visited {
-  padding: 0 1px;
-  color: rgb(255,198,157);
-  text-decoration: underline;
+/* state changes */
+h2 {
+  font-size: 2em;
+  padding: .5em 2280px .5em 0;
+  margin: 0 -2280px 0 0;
+  width: 720px;
+  border-top: .25em solid #fff;
+  border-bottom: .25em solid #fff;
+  color: #fff;
+  background: rgb(255,198,157);
+  text-align:right;
 }
-
-a:hover, 
-a:active, 
-a:focus {
-  color: #FFF;
-  background-color: rgb(255,198,157);
-  text-decoration: underline;
-}
-
-
-/* lists */
-ul {
-  margin: 0 0 1.5em 0;
-  padding: 1.5em 0 0 0;
-  list-style: none;
-  overflow: hidden;
-  border-bottom: 1px solid #999;
-}
-
-ul li {
-  min-height: 21em;
-  height:auto !important;
-  height: 21em;
-  list-style: none;
-  margin: 0 5% 1.5em 0;
-  padding: 0;
-  width: 30%;
-  float: left;
-}
-
-ul.two li {
-  width: 47%;
-}
-
-/*ul li:hover {
-  background: #FFEBDD;
-  background: rgba(255, 106, 0, .05);
-}*/
-
-ul li h4,
-ul li p {
-  padding: 1px;
-}
-
-.first {
-  clear: both;
-}
-
-.last {
-  margin-right: 0;
-}
-
-article header {
-}
-
 article header {
   border-color: rgb(255,198,157);
   border-top: 1px solid rgb(255,198,157);
@@ -189,19 +53,6 @@ article header {
   margin-bottom: 3em;
   width:720px;
 }
-
-/* article for next meetup has orange highlights */
-article h2 {
-  padding: .5em 2280px .5em 0;
-  margin: 0 -2280px 0 0;
-  width: 720px;
-  border-top: .25em solid #fff;
-  border-bottom: .25em solid #fff;
-  color: #fff;
-  background: rgb(255,198,157);
-  text-align:right;
-}
-
 article.next header {
   border-left: 2280px solid rgb(255,106,0);
   border-right:0;
@@ -216,20 +67,16 @@ article.next h2 {
   padding: .5em 0 .5em 2280px;
   margin: 0 0 0 -2280px;
 }
-
 .next ul {
   border-bottom: 1px solid rgb(255,106,0);
 }
 
-/*
-colors
-*/
 .next header,
 article:hover header { 
   border-color: rgb(255,106,0); 
 }
 .next h2,
-aerticle:hover h2 { 
+article:hover h2 { 
   color: #fff; 
   background: rgb(255,106,0); 
 }
@@ -237,29 +84,61 @@ aerticle:hover h2 {
 article:hover {
   color: rgb(255,106,0); 
 }
-
-.next p,
+aside,
 footer,
+.next p,
 .next h4,
+article:hover h4,
 article:hover { 
-  color:rgb(0,0,0); 
+  color:rgb(0,0,0) !important; 
 }
-.next a, 
-.intro a,
+/* links */
+a, 
+a:link, 
+a:visited {
+  padding: 0 1px;
+  color: rgb(255,198,157);
+  text-decoration: underline;
+}
+a:hover, 
+a:active, 
+a:focus {
+  color: #FFF;
+  background-color: rgb(255,106,0);
+  text-decoration: underline;
+}
+aside a,
 footer a,
+.next a, 
 .next a:link, 
 .next a:visited, 
-article:hover a
-{
+article:hover a {
   color: rgb(255,106,0) !important;
 }
-
+article a:hover,
+aside a:hover,
+footer a:hover,
 .next a:hover, 
 .next a:active, 
 .next a:focus {
-  background-color: rgb(255,106,0);
+  background-color: rgb(255,106,0) !important;
+  color: #fff !important;
+}
+.next ul,
+article:hover ul {
+  border-bottom-color: rgb(0,0,0) !important;
 }
 
+/* lists */
+ul{margin:0 0 1.5em 0;padding:1.5em 0 0 0;list-style:none;overflow:hidden;border-bottom:1px solid rgba(0,0,0,0.25);}
+ul li{min-height:21em;height:auto !important;height:21em;list-style:none;margin:0 5% 1.5em 0;padding:0;width:30%;float:left;}
+ul.two li{width:47%;}
+ul li h4,
+ul li p{padding:1px;}
+.first{clear:both;}
+.last{margin-right:0;}
+.collapse h4,
+.collapse li{min-height:0;}
 
 @media screen and (max-device-width: 750px), screen and (max-width: 750px) {
   .container {
