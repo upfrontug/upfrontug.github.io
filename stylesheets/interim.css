@@ -137,8 +137,12 @@ ul li h4,
 ul li p{padding:1px;}
 .first{clear:both;}
 .last{margin-right:0;}
+/*
 .collapse h4,
-.collapse li{min-height:0;}
+.collapse li {
+  min-height: 0;
+}
+*/
 
 @media screen and (max-device-width: 750px), screen and (max-width: 750px) {
   .container {
