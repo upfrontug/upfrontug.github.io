@@ -17,6 +17,9 @@ h1,h2,h3,h4,h5,h6{font-weight:normal;color:#111;}
 h1{line-height:1;margin-bottom:0.5em;margin-top:1em;font-size:4.5em;text-transform:uppercase;color:rgb(255,106,0);}
 h3{font-size:1.5em;line-height:1;margin-bottom:1em;font-weight:bold;}
 h4{font-size:1.5em;margin-bottom:1.5em;min-height:4.5em;height:auto !important;height:4.5em;font-weight:400;color:rgba(0,0,0,0.25);}
+ul.three h4 {
+  min-height: 1em;
+}
 p{margin:0 0 1.5em;}
 em{font-weight:normal;font-style:italic;}
 aside{font-size:1.25em;font-style:italic;float:left;margin:1em 0 3.5em 0;text-align:center;color:rgb(0,0,0);}
@@ -133,6 +136,7 @@ article:hover ul {
 ul{margin:0 0 1.5em 0;padding:1.5em 0 0 0;list-style:none;overflow:hidden;border-bottom:1px solid rgba(0,0,0,0.25);}
 ul li{min-height:21em;height:auto !important;height:21em;list-style:none;margin:0 5% 1.5em 0;padding:0;width:30%;float:left;}
 ul.two li{width:47%;}
+ul.three li{width:100%; min-height:1em;}
 ul li h4,
 ul li p{padding:1px;}
 .first{clear:both;}
