@@ -148,6 +148,15 @@ ul li p{padding:1px;}
 }
 */
 
+.cancelled {
+  text-decoration: line-through;
+}
+.cancelled_hint {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
 @media screen and (max-device-width: 750px), screen and (max-width: 750px) {
   .container {
     width: 95%;
