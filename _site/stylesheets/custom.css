@@ -1,0 +1,234 @@
+/* reset.css */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+article, aside, dialog, figure, footer, header, hgroup, nav, section {display:block;}
+body {line-height:1.5;}
+table {border-collapse:separate;border-spacing:0;}
+caption, th, td {text-align:left;font-weight:normal;}
+table, td, th {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:"";}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+
+/* typography.css */
+html {font-size:100.01%;}
+body {
+  font-size: 100%;
+  font-family: "ff-meta-serif-web-pro-1","ff-meta-serif-web-pro-2",Georgia,"Times New Roman",serif;
+  color: #3A3833;
+}
+#wrap {
+  overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+  color: #57544F;
+}
+h1 {
+  line-height: 1;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+  font-size: 4.5em;
+  text-transform: uppercase;
+  color: #D03800;
+}
+h3 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+h4 {
+  font-size: 1em;
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #D03800;
+  font-family: "ff-meta-web-pro-1","ff-meta-web-pro-2","Helvetica Neue",Arial,Helvetica,sans-serif;
+}
+
+h4 span {
+  display: block;
+}
+
+p{margin:0 0 1.5em;}
+em{font-weight:normal;font-style:italic;}
+aside {
+  font-size: 1.25em;
+  font-style: italic;
+  float: left;
+  margin: 1em 0 3.5em 0;
+  color: #57544F;
+  text-align: center;
+}
+
+/* layout */
+.container {
+  width: 95%;
+  max-width: 720px;
+  margin: 1.5em auto 4.5em auto;
+}
+#logo {
+  width: 240px;
+  font-size: 1em;
+  margin: 0 auto;
+  padding: 0;
+}
+#logo a:hover {
+  background-position: -426px 0;
+}
+#logo a {
+  background: url(../images/logo-b.png) no-repeat 0 0;
+  display: block;
+  width: 240px;
+  height: 214px;
+}
+article {
+  margin-bottom: 6em;
+  clear: left;
+}
+
+/* design */
+body {
+  background: url(../images/upfront_bg.png) repeat 0 0;
+}
+
+/* state changes (special styles for next meetup) */
+h2 {
+  font-size: 2em;
+  padding: .5em 0;
+  margin: 0;
+  color: #fff;
+  background: #57544F;
+  text-align: center;
+}
+article header {
+  border-color: #57544F;
+  border-top: 1px solid #57544F;
+  border-bottom: 1px solid #57544F;
+  padding: .25em 0;
+  margin-bottom: 3em;
+}
+
+.next header { 
+  border-color: #D03800; 
+}
+.next h2 { 
+  color: #FFF; 
+  background: #D03800; 
+}
+.next {
+  color: #D03800; 
+}
+aside,
+footer,
+.next p { 
+  color: #57544F;
+}
+/* links */
+a, 
+a:link, 
+a:visited {
+  padding: 0 1px;
+  color: #C52E00;
+  text-decoration: none;
+}
+a:hover, 
+a:active, 
+a:focus {
+  color: #C52E00;
+  text-decoration: underline;
+}
+aside a,
+footer a,
+.next a, 
+.next a:link, 
+.next a:visited {
+}
+
+
+
+/* lists */
+ul {
+  margin: 0 0 1.5em 0;
+  padding: 1.5em 0 0 0;
+  list-style: none;
+}
+ul li {
+  list-style: none;
+  margin: 0 5% 1.5em 0;
+  padding: 0;
+}
+
+ul.two {
+  overflow: hidden;
+}
+ul.two > li {
+  width: 47%;
+  float: left;
+}
+ul li h4,
+ul li p {
+  padding: 1px;
+}
+.first {
+  clear: both;
+}
+.last {
+  margin-right: 0;
+}
+
+.speaker_info {
+  font-style: italic;
+  border-top: .25em solid #B2B1AD;
+  padding-top: .5em;
+  margin-top: -.75em;
+  margin-bottom: 0;
+}
+
+.speaker_links {
+  list-style: none;
+  margin: 0 0 3em 0;
+  padding: 0;
+  clear: both;
+  overflow: hidden;
+  border-bottom: 0;
+}
+
+.speaker_links li {
+  float: left;
+  margin: 0 1.5em 0 0;
+  list-style: none;
+}
+
+.speaker_links li a, 
+.speaker_links li a:link, 
+.speaker_links li a:visited {
+  color: #B2B1AD;
+}
+
+.speaker_links li a:hover, 
+.speaker_links li a:active, 
+.speaker_links li a:focus {
+  color: #D03800;
+  text-decoration: none;
+}
+
+.cancelled {
+  text-decoration: line-through;
+}
+.cancelled_hint {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+@media screen and (max-device-width: 660px), screen and (max-width: 660px) {
+
+  ul.two li,
+  ul li,
+  .first,
+  .last {
+    width: auto;
+    float: none;
+    margin: 0 0 3em 0;
+  }
+}

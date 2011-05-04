@@ -1,0 +1,23 @@
+/* print.css */
+body {
+  line-height:1.5;
+  font-family: Baskerville, "Baskerville old face", "Hoefler Text", Garamond, "Times New Roman", serif;
+  color:#000;
+  background:none;
+  font-size:10pt;
+  }
+.container {background:none;}
+h1, h2, h3, h4 {
+  font-family: Baskerville, "Baskerville old face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+a:link, 
+a:visited {
+  color: #000;
+  background:transparent;
+  font-weight:700;
+  text-decoration:underline;
+}
+a:link:after, 
+a:visited:after {
+  content:" (" attr(href) ")";font-size:90%;
+}
