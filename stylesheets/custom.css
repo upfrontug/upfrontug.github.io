@@ -220,6 +220,30 @@ ul li p {
   font-weight: bold;
 }
 
+footer {
+  background: #D03800;
+  color: #FFF;
+}
+
+footer .container {
+  padding: 3em 0;
+  margin-bottom: 0;
+}
+
+footer a, 
+footer a:link, 
+footer a:visited {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+footer a:hover, 
+footer a:active, 
+footer a:focus {
+  color: #FFF;
+  text-decoration: underline;
+}
+
 
 @media screen and (max-device-width: 660px), screen and (max-width: 660px) {
 
