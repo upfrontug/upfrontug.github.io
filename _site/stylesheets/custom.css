@@ -65,10 +65,15 @@ aside {
   max-width: 720px;
   margin: 1.5em auto 4.5em auto;
 }
+
+.logo_header {
+  padding-top: 2em;
+}
+
 #logo {
   width: 240px;
   font-size: 1em;
-  margin: 0 auto;
+  margin: 2em auto;
   padding: 0;
 }
 #logo a:hover {
@@ -135,6 +140,7 @@ a:active,
 a:focus {
   color: #C52E00;
   text-decoration: underline;
+  outline: none;
 }
 aside a,
 footer a,
@@ -143,7 +149,13 @@ footer a,
 .next a:visited {
 }
 
+/* facebook like button */
 
+.like_box {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
 
 /* lists */
 ul {
