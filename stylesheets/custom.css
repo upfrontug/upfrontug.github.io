@@ -239,12 +239,13 @@ ul.two > li.last {
 
 .social {
   padding: 0;
+  overflow: hidden;
 }
 
 .social li {
-  width: 220px;
+  width: 32%;
   float: left;
-  margin-right: 20px;
+  margin-right: 2%;
 }
 
 .social li.last {
@@ -267,23 +268,22 @@ ul.two > li.last {
   overflow: hidden;
 }
 
+.team {
+  padding-top: 0;
+}
+
 .team li,
 #speakers li {
   font-size: .75em;
   text-align: center;
-  width: 101px;
-  margin-right: 20px;
+  width: 23%;
+  margin-right: 2%;
   float: left;
   border: 1px solid #FFF
 }
 
-.team li {
-  width: 163px;
-}
-
-#speakers li:nth-child(6n) {
-  margin-right: 0px;
-}
+.team li:nth-child(4n),
+#speakers li:nth-child(4n),
 .team li.last,
 #speakers li.last {
   margin-right: 0px;
@@ -296,6 +296,7 @@ ul.two > li.last {
 
 .team img,
 #speakers img {
+  max-width: 100%;
 }
 
 .team_inner,
@@ -313,15 +314,27 @@ ul.two > li.last {
   height: 9em;
 }
 
-.team a, 
-.team a:link, 
+.team_inner {
+  min-height: 14.5em;
+  height:auto !important;
+  height: 14.5em;
+}
+
+.team_inner h4 {
+  margin-bottom: .5em;
+}
+
+
+.team a,
+.team a:link,
 .team a:visited {
   color: #3A3833;
   text-decoration: none;
+  display: block;
 }
 
-.team a:hover, 
-.team a:active, 
+.team a:hover,
+.team a:active,
 .team a:focus {
   color: #3A3833;
   text-decoration: underline;
@@ -381,6 +394,17 @@ footer a:focus {
     width: auto;
     float: none;
     margin: 0 0 3em 0;
+  }
+
+  .team li,
+  #speakers li {
+    width: 48%;
+    margin-right: 3%;
+  }
+
+  .team li:nth-child(2n),
+  #speakers li:nth-child(2n) {
+    margin-right: 0px;
   }
 }
 
