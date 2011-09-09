@@ -93,7 +93,7 @@ article {
 
 /* design */
 body {
-  background: url(../images/upfront_bg.png) repeat 0 0;
+  background: #f2f5f3 url(../images/upfront_bg.png) repeat 0 0;
 }
 
 /* state changes (special styles for next meetup) */
@@ -246,19 +246,68 @@ ul.two > li.last {
   width: 32%;
   float: left;
   margin-right: 2%;
+  overflow: hidden;
 }
 
 .social li.last {
   margin-right: 0;
 }
 
-/* speakers  */
-.speakers_cntr {
-  background: url(../images/upfront_bg_dark.png) repeat 0 0;
-  overflow: hidden;
-  border-bottom: 3em solid #D03800;
+.social a,
+.social a:link,
+.social a:visited {
+  display: block;
+  min-height: 3em;
+  height:auto !important;
+  height: 3em;
+  color: #D03800;
+  padding: 6.5em 2em 1.5em 2em;
+  text-decoration: none;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  font-family: "ff-meta-web-pro-1","ff-meta-web-pro-2","Helvetica Neue",Arial,Helvetica,sans-serif;
 }
 
+.social a:hover,
+.social a:active,
+.social a:focus {
+  background-color: #fff;
+  color: #FFF;
+  color: #D03800;
+  
+  text-decoration: none;
+}
+
+.social_twitter,
+.social_fb,
+.social_mail {
+  background: #a01f0c url(/images/upfront_social_icons.png) no-repeat 50% 16px;
+}
+
+.social_fb {
+  background-position: 50% -293px;
+}
+
+.social_mail {
+  background-position: 50% -605px;
+}
+
+/* speakers and team */
+.team_cntr,
+.speakers_cntr {
+  background: #eaefec url(../images/upfront_bg_dark.png) repeat 0 0;
+  overflow: hidden;
+  border-bottom: 3em solid #D03800;
+  border-top: 1px solid #FFF;
+}
+
+.team_cntr {
+  background: #e1e6e2 url(../images/upfront_bg_darkest.png) repeat 0 0;
+  border-bottom: 1px solid #DDD;
+}
+
+.team_cntr .container,
 .speakers_cntr .container {
   margin: 3em auto;
 }
@@ -355,6 +404,8 @@ footer {
   background: #D03800;
   color: #FFF;
   text-align: center;
+  border-bottom: 1px solid #a01f0c;
+  border-top: 1px solid #FFF;
 }
 
 footer h3 {
@@ -405,6 +456,14 @@ footer a:focus {
   .team li:nth-child(2n),
   #speakers li:nth-child(2n) {
     margin-right: 0px;
+  }
+  
+  .social a,
+  .social a:link,
+  .social a:visited {
+    min-height: 5em;
+    height:auto !important;
+    height: 5em;
   }
 }
 
