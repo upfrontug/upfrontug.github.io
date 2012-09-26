@@ -16,8 +16,7 @@ body {
   font-family: "ff-meta-serif-web-pro-1","ff-meta-serif-web-pro-2",Georgia,"Times New Roman",serif;
   color: #3A3833;
 }
-#wrap {
-}
+
 h1,h2,h3,h4,h5,h6 {
   font-weight: normal;
   color: #57544F;
@@ -264,10 +263,9 @@ ul.two > li.last {
   height:auto !important;
   height: 3em;
   color: #D03800;
-  padding: 6.5em 2em 1.5em 2em;
+  font-size: .875em;
+  padding: 9.5em 2em 1.5em 2em;
   text-decoration: none;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
   border-radius: 2px;
   font-family: "ff-meta-web-pro-1","ff-meta-web-pro-2","Helvetica Neue",Arial,Helvetica,sans-serif;
 }
@@ -278,7 +276,6 @@ ul.two > li.last {
   background-color: #fff;
   color: #FFF;
   color: #D03800;
-  
   text-decoration: none;
 }
 
@@ -433,7 +430,7 @@ footer a:focus {
   text-decoration: underline;
 }
 
-@media screen and (max-device-width:660px),screen and (max-width:660px) {
+@media screen and (max-device-width: 660px),screen and (max-width: 660px) {
 
   .container {
     width: 95%;
@@ -459,7 +456,7 @@ footer a:focus {
   #speakers li:nth-child(2n) {
     margin-right: 0px;
   }
-  
+
   .social a,
   .social a:link,
   .social a:visited {
@@ -470,10 +467,11 @@ footer a:focus {
 }
 
 
-@media screen and (max-device-width:320px),screen and (max-width:320px) {
+@media screen and (max-device-width: 320px),screen and (max-width:320px) {
 
-  body {
-    -webkit-text-size-adjust: 300%;
+  html {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
   }
 
   h2 {
@@ -490,5 +488,11 @@ footer a:focus {
 
   article header {
     margin-bottom: 1.5em;
+  }
+  .social a,
+  .social a:link,
+  .social a:visited {
+    font-size: .75em;
+    padding: 9.5em 1em 1.5em 1em;
   }
 }
