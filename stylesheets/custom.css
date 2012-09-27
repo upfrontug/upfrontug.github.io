@@ -53,13 +53,16 @@ em{font-weight:normal;font-style:italic;}
 aside {
   font-size: 1.25em;
   font-style: italic;
-  float: left;
   margin: 1em 0 3.5em 0;
   color: #57544F;
   text-align: center;
 }
 
 /* layout */
+#root {
+  margin-top: 0;
+}
+
 .container {
   width: 95%;
   max-width: 720px;
@@ -67,7 +70,7 @@ aside {
 }
 
 .logo_header {
-  padding-top: 2em;
+  padding-top: .5em;
 }
 
 #logo {
@@ -87,6 +90,35 @@ aside {
   width: 214px;
   height: 214px;
 }
+
+nav ul {
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 2.5%;
+}
+
+nav ul li a,
+nav ul li a:link,
+nav ul li a:visited {
+  display: inline-block;
+  padding: .5em .75em;
+  color: #A01f0C;
+  text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a:active,
+nav ul li a:focus {
+  color: #;
+  text-decoration: underline;
+}
+
 article {
   margin-bottom: 6em;
   clear: left;
@@ -132,8 +164,11 @@ a,
 a:link,
 a:visited {
   padding: 0 1px;
-  color: #C52E00;
+  color: #A01f0C;
   text-decoration: none;
+  -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+  -moz-transition: color 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 a:hover,
 a:active,
@@ -141,12 +176,6 @@ a:focus {
   color: #C52E00;
   text-decoration: underline;
   outline: none;
-}
-aside a,
-footer a,
-.next a,
-.next a:link,
-.next a:visited {
 }
 
 /* facebook like button */
@@ -282,7 +311,7 @@ ul.two > li.last {
 .social_twitter,
 .social_fb,
 .social_mail {
-  background: #a01f0c url(/images/upfront_social_icons.png) no-repeat 50% 16px;
+  background: #A01f0C url(/images/upfront_social_icons.png) no-repeat 50% 16px;
 }
 
 .social_fb {
@@ -355,7 +384,7 @@ ul.two > li.last {
   margin: 4px;
   padding: 1em .2em;
   background: #FFF;
-  color: #3A3833;
+  color: #A01f0C;
   text-decoration: none;
   min-height: 9em;
   height:auto !important;
@@ -495,6 +524,10 @@ screen and (max-width:320px) {
   .social a:visited {
     font-size: .75em;
     padding: 9.5em 1em 1.5em 1em;
+  }
+  nav ul li {
+    display: inline-block;
+    margin: 0;
   }
 }
 
