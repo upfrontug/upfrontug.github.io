@@ -467,7 +467,8 @@ footer a:focus {
 }
 
 
-@media screen and (max-device-width: 320px),screen and (max-width:320px) {
+@media screen and (max-device-width: 320px),
+screen and (max-width:320px) {
 
   html {
     -webkit-text-size-adjust: none;
@@ -496,3 +497,17 @@ footer a:focus {
     padding: 9.5em 1em 1.5em 1em;
   }
 }
+
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+
+/* Hi-res logos */
+  #logo a {
+    background-image: image-url('../images/logo-b@2x.png');
+    background-size: auto 34px;
+  }
+}
+
