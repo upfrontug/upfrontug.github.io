@@ -37,17 +37,24 @@
   </head>
   <body>
   <div id="wrap">
-    <div class="like_box">
-      <iframe src="http://www.facebook.com/plugins/like.php?app_id=265825833436844&amp;href=http%3A%2F%2Fup.front.ug%2F&amp;send=false&amp;layout=standard&amp;width=300&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:80px;" allowTransparency="true" ></iframe>
-    </div>
     <div id="root" class="container">
+
+      <nav>
+        <ul>
+          <li><a href="/#events">Events</a></li>
+          <li><a href="/#contact">Contact</a></li>
+          <li><a href="/#team">Team</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/archive.html">Archive</a></li>
+        </ul>
+      </nav>
+
       <header class="logo_header">
         <h1 id="logo">
           <a href="/" title="Home"></a>
         </h1>
         <aside>
-          up.front is a user group focused on web design &amp; frontend development topics, based in Berlin.
-          Every month we meet at <a href="http://co-up.de" title="co-up.de">co.up</a>, a co-working space in Kreuzberg, where we discuss everything related to webdesign and frontend development. Everyone is welcome to participate, either by attending or holding a talk themselves. We are very much looking forward to your talk proposals, be it a keynote or a 5 minute chat about your latest find on the web.
+          up.front is a monthly user group focused on web design &amp; frontend development topics, based in Berlin.
         </aside>
       </header>
 
@@ -1165,7 +1172,7 @@
     <!-- footer -->
     <footer>
       <div class="container">
-        <h3>Contact</h3>
+        <h3 id="contact">Contact</h3>
         <p>
           You are welcome to contact us and spread the word via your favourite channels.
         </p>
@@ -1175,12 +1182,17 @@
           <li class="last"><a href="http://groups.google.com/group/upfront_ug" class="social_mail">Join our Mailinglist</a></li>
         </ul>
         <p>Thanks to our friends <a href="http://co-up.de" title="co-up.de">co.up Coworking Space</a></p>
+
+        <div class="like_box">
+          <iframe src="http://www.facebook.com/plugins/like.php?app_id=265825833436844&amp;href=http%3A%2F%2Fup.front.ug%2F&amp;send=false&amp;layout=standard&amp;width=300&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=63" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:63px; margin: 0 auto;" allowTransparency="true" ></iframe>
+        </div>
+
       </div>
     </footer>
 
     <div class="team_cntr">
       <div class="container">
-        <h3>Meet the team</h3>
+        <h3 id="team">Meet the team</h3>
 
         <ul class="team">
           <li>
@@ -1220,7 +1232,7 @@
 
     <div class="speakers_cntr">
       <div class="container">
-        <h3>Say hi to our speakers!</h3>
+        <h3 id="speaker_list">Say hi to our speakers!</h3>
         <ul id="speakers"></ul>
       </div>
     </div>

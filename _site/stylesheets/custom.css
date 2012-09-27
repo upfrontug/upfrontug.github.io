@@ -152,9 +152,7 @@ footer a,
 /* facebook like button */
 
 .like_box {
-  position: absolute;
-  top: 1em;
-  left: 1em;
+  background: transparent;
 }
 
 /* lists */
