@@ -274,7 +274,7 @@ ul.two > li.last {
 
 .talk_download{
   display: block;
-  background: url('../images/slide-icon.png');
+  background: url('../images/slide-icon.png') no-repeat;
   background-position: bottom;
   width: 32px;
   height: 32px;
@@ -572,7 +572,8 @@ only screen and (min-device-pixel-ratio : 1.5) {
   }
   
   .talk_download{
-    background: url('../images/slide-icon@2x.png');
-    background-size: 32px 32px;
+    background: url('../images/slide-icon@2x.png') no-repeat;
+    background-size: 32px auto;
+    background-position: bottom;
   }
 }
