@@ -42,6 +42,7 @@ h4 {
   font-weight: bold;
   color: #D03800;
   font-family: "ff-meta-web-pro-1","ff-meta-web-pro-2","Helvetica Neue",Arial,Helvetica,sans-serif;
+  float: left; /* For slide download on the right */
 }
 
 h4 span {
@@ -208,6 +209,11 @@ ul li h4,
 ul li p {
   padding: 1px;
 }
+
+.talks li p{
+  clear: both;
+}
+
 .first {
   clear: both;
 }
@@ -264,6 +270,22 @@ ul.two > li.last {
 .cancelled_hint {
   text-decoration: none;
   font-weight: bold;
+}
+
+.talk_download{
+  display: block;
+  background: url('../images/slide-icon.png');
+  background-position: bottom;
+  width: 32px;
+  height: 32px;
+  float: right;
+  text-indent: -9999px;
+  white-space: nowrap; 
+  margin: 2px;
+}
+
+.talk_download:hover{
+  background-position: top;
 }
 
 /* social network links list */
@@ -493,6 +515,11 @@ footer a:focus {
     height:auto !important;
     height: 5em;
   }
+  
+  h4{
+    width: 85%;
+  }
+
 }
 
 
@@ -529,6 +556,7 @@ screen and (max-width:320px) {
     display: inline-block;
     margin: 0;
   }
+  
 }
 
 
@@ -542,5 +570,9 @@ only screen and (min-device-pixel-ratio : 1.5) {
     background-image: url('../images/logo-b@2x.png');
     background-size: auto 214px;
   }
+  
+  .talk_download{
+    background: url('../images/slide-icon@2x.png');
+    background-size: 32px 32px;
+  }
 }
-
