@@ -210,8 +210,16 @@ ul li p {
   padding: 1px;
 }
 
-.talks li p{
+.talks li p {
   clear: both;
+}
+
+.talk_example {
+  background: #FFF;
+  padding: 1em;
+}
+.talk_example .speaker_links {
+  margin-bottom: .5em;
 }
 
 .first {
