@@ -429,6 +429,7 @@ ul.two > li.last {
 
 .team_inner h4 {
   margin-bottom: .5em;
+  float: none;
 }
 
 
