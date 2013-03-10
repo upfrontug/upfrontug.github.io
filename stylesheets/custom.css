@@ -133,7 +133,7 @@ article {
 
 /* design */
 body {
-  background: #f2f5f3 url(../images/upfront_bg.png) repeat 0 0;
+  background: #fff;
 }
 
 /* state changes (special styles for next meetup) */
