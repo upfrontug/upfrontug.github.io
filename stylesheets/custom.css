@@ -13,7 +13,9 @@ a img {border:none;}
 html {font-size:100.01%;}
 body {
   font-size: 100%;
-  font-family: "ff-meta-serif-web-pro-1","ff-meta-serif-web-pro-2",Georgia,"Times New Roman",serif;
+  font-family: 'Aller-Regular', Helvetica, Arial, 'Helvetica Neue';
+  
+  font-family: ;
   color: #3A3833;
 }
 
@@ -33,15 +35,14 @@ h3 {
   font-size: 1.5em;
   line-height: 1;
   margin-bottom: 1em;
-  font-weight: bold;
+  font-family: 'Aller-Bold';
   text-align: center;
 }
 h4 {
   font-size: 1em;
   margin-bottom: 0;
-  font-weight: bold;
+  font-family: 'Aller-Bold';
   color: #D03800;
-  font-family: "ff-meta-web-pro-1","ff-meta-web-pro-2","Helvetica Neue",Arial,Helvetica,sans-serif;
   float: left; /* For slide download on the right */
 }
 
@@ -49,11 +50,16 @@ h4 span {
   display: block;
 }
 
-p{margin:0 0 1.5em;}
-em{font-weight:normal;font-style:italic;}
+p {
+  margin:0 0 1.5em;
+}
+em, i {
+  font-weight: normal;
+  font-family: 'Aller-Italic';
+}
 aside {
   font-size: 1.25em;
-  font-style: italic;
+  font-family: 'Aller-Italic';
   margin: 1em 0 3.5em 0;
   color: #57544F;
   text-align: center;
@@ -132,6 +138,7 @@ body {
 
 /* state changes (special styles for next meetup) */
 h2 {
+  font-family: 'AllerDisplay-Regular';
   font-size: 2em;
   padding: .5em 0;
   margin: 0;
@@ -230,7 +237,7 @@ ul.two > li.last {
 }
 
 .speaker_info {
-  font-style: italic;
+  font-family: 'Aller-Italic';
   border-top: .25em solid #B2B1AD;
   padding-top: .5em;
   margin-top: -.75em;
@@ -249,7 +256,6 @@ ul.two > li.last {
   clear: both;
   overflow: hidden;
   border-bottom: 0;
-  font-family: "ff-meta-web-pro-1","ff-meta-web-pro-2","Helvetica Neue",Arial,Helvetica,sans-serif;
 
 }
 
@@ -277,7 +283,7 @@ ul.two > li.last {
 }
 .cancelled_hint {
   text-decoration: none;
-  font-weight: bold;
+  font-family: 'Aller-Bold';
 }
 
 .talk_download{
@@ -326,7 +332,6 @@ ul.two > li.last {
   padding: 9.5em 2em 1.5em 2em;
   text-decoration: none;
   border-radius: 2px;
-  font-family: "ff-meta-web-pro-1","ff-meta-web-pro-2","Helvetica Neue",Arial,Helvetica,sans-serif;
 }
 
 .social a:hover,
