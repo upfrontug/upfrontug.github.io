@@ -55,6 +55,7 @@ p {
 }
 em, i {
   font-weight: normal;
+  font-style: normal;
   font-family: 'Aller-Italic';
 }
 aside {
@@ -147,16 +148,9 @@ h2 {
   text-align: center;
 }
 article header {
-  border-color: #57544F;
-  border-top: 1px solid #57544F;
-  border-bottom: 1px solid #57544F;
-  padding: .25em 0;
   margin-bottom: 3em;
 }
 
-.next header {
-  border-color: #D03800;
-}
 .next h2 {
   color: #FFF;
   background: #D03800;
@@ -254,6 +248,7 @@ ul.two > li.last {
   margin: 0 0 3em 0;
   padding: 0;
   clear: both;
+  font-size: .875em;
   overflow: hidden;
   border-bottom: 0;
 
@@ -358,79 +353,51 @@ ul.two > li.last {
 }
 
 /* speakers and team */
-.team_cntr,
-.speakers_cntr {
-  background: #eaefec url(../images/upfront_bg_dark.png) repeat 0 0;
-  overflow: hidden;
-  border-bottom: 3em solid #D03800;
-  border-top: 1px solid #FFF;
-}
-
 .team_cntr {
-  border-bottom: 1px solid #DDD;
+  background: #eaefec;
+  overflow: hidden;
 }
 
-.team_cntr .container,
-.speakers_cntr .container {
+.team_cntr .container {
   margin: 3em auto;
 }
 
-.team,
-#speakers {
-  overflow: hidden;
-}
-
 .team {
+  overflow: hidden;
   padding-top: 0;
 }
 
-.team li,
-#speakers li {
+.team li {
   font-size: .75em;
   text-align: center;
   width: 23%;
-  margin-right: 2%;
+  margin-right: 2.6%;
   float: left;
-  border: 1px solid #FFF
 }
 
 .team li:nth-child(4n),
-#speakers li:nth-child(4n),
-.team li.last,
-#speakers li.last {
+.team li.last {
   margin-right: 0px;
 }
 
-.team span,
-#speakers span {
+.team span {
   font-size: .75em;
 }
 
-.team img,
-#speakers img {
+.team img {
   max-width: 100%;
 }
 
-.team_inner,
-#speakers a,
-#speakers a:link,
-#speakers a:visited {
+.team_inner {
   display: block;
-  margin: 4px;
   padding: 1em .2em;
   background: #FFF;
   color: #A01f0C;
   text-decoration: none;
-  min-height: 9em;
-  height:auto !important;
-  height: 9em;
+  min-height: 14.5em;
+
 }
 
-.team_inner {
-  min-height: 14.5em;
-  height:auto !important;
-  height: 14.5em;
-}
 
 .team_inner h4 {
   margin-bottom: .5em;
@@ -455,10 +422,7 @@ ul.two > li.last {
 
 .team a:hover,
 .team a:active,
-.team a:focus,
-#speakers a:hover,
-#speakers a:active,
-#speakers a:focus {
+.team a:focus {
   color: #D03800;
   text-decoration: none;
 }
@@ -511,14 +475,12 @@ footer a:focus {
     margin: 0 0 3em 0;
   }
 
-  .team li,
-  #speakers li {
+  .team li {
     width: 48%;
     margin-right: 3%;
   }
 
-  .team li:nth-child(2n),
-  #speakers li:nth-child(2n) {
+  .team li:nth-child(2n) {
     margin-right: 0px;
   }
 

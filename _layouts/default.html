@@ -45,7 +45,6 @@
         <ul>
           <li><a href="/#events">Events</a></li>
           <li><a href="/#contact">Contact</a></li>
-          <li><a href="/#team">Team</a></li>
           <li><a href="/about.html">About</a></li>
         </ul>
       </nav>
@@ -82,27 +81,32 @@
           10999 Berlin<br>
           <a href="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Adalbertstra%C3%9Fe+7,+10999+Berlin,+Germany&sll=52.549636,13.666992&sspn=0.901874,1.851196&ie=UTF8&hq=&hnear=Adalbertstra%C3%9Fe+7,+Kreuzberg+10999+Berlin,+Germany&z=16">&raquo; Directions</a>
         </p>
-
-        <p>
-          You are welcome to contact us and spread the word via your favourite channels.
-        </p>
+        
+        
+        
+        <br>
+        
         <ul class="social">
           <li><a href="http://twitter.com/upfront_ug" class="social_twitter">Follow up.front.ug on Twitter</a></li>
           <li><a href="http://www.facebook.com/pages/Upfront/158502897496288" class="social_fb">We are also on Facebook</a></li>
           <li class="last"><a href="http://groups.google.com/group/upfront_ug" class="social_mail">Join our Mailinglist</a></li>
         </ul>
-
+        
+        
+        <br>
+        
+        
         <div class="like_box">
           <iframe src="http://www.facebook.com/plugins/like.php?app_id=265825833436844&amp;href=http%3A%2F%2Fup.front.ug%2F&amp;send=false&amp;layout=standard&amp;width=300&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=63" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:63px; margin: 0 auto;" allowTransparency="true" ></iframe>
         </div>
+        
+        <br>
+        <br>
 
-      </div>
-    </footer>
 
-    <div class="team_cntr">
-      <a id="team"></a>
-      <div class="container">
-        <h3>Meet the team</h3>
+        <br>
+        
+        <h3>Meet the Organizers</h3>
 
         <ul class="team">
           <li>
@@ -135,17 +139,11 @@
             </div>
           </li>
         </ul>
-      </div>
-    </div>
 
-    <div class="speakers_cntr">
-      <a id="speaker_list"></a>
 
-      <div class="container">
-        <h3>Say hi to our speakers!</h3>
-        <ul id="speakers"></ul>
       </div>
-    </div>
+    </footer>
+
 
    </div>
 
@@ -158,76 +156,6 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-    </script>
-
-     <script type="text/javascript">
-
-
-      $(document).ready(function(){
-
-        var request = "http://api.twitter.com/1/lists/members.json?slug=up-front-speakers&owner_screen_name=upfront_ug&cursor=";
-        var fetches = 0;
-
-        function getListMembers(cursor){
-          $.ajax({
-            'url': request+cursor,
-            'type': "GET",
-            'dataType': 'jsonp',
-            'jsonp':'callback',
-            'crossDomain' : true,
-            'success': function(response) {
-              handleListMembers(response);
-            },
-            'error': function(a, b, c) {
-              console.log(a);
-            }
-          });
-        };
-
-        function handleListMembers(response){
-          var userCount = 0;
-          $.each(response.users, function(id, user){
-              if(fetches > 0 && userCount == 0){
-                // skip first user of all but the first page request, because they're duplicates
-              } else {
-                $('#speakers').append('<li><a href="http://www.twitter.com/'+user.screen_name+'"><img src="'+user.profile_image_url+'"/><br /> '+user.name+' <br /><span>@'+user.screen_name+'</span></a></li>')
-              }
-              userCount++;
-              fetches++;
-            });
-          // yo krizz, inspect this object in the console to find additional parameters in user:
-          console.log(response);
-          if(response.next_cursor != "0"){
-              getListMembers(response.next_cursor);
-          } else {
-            $('#speakers').shuffle();
-          }
-        };
-
-        getListMembers(-1);
-
-        (function($){
-          $.fn.shuffle = function() {
-            return this.each(function(){
-              var items = $(this).children();
-              return (items.length)
-              ? $(this).html($.shuffle(items))
-              : this;
-            });
-          }
-
-          $.shuffle = function(arr) {
-            for(
-              var j, x, i = arr.length; i;
-              j = parseInt(Math.random() * i),
-              x = arr[--i], arr[i] = arr[j], arr[j] = x
-            );
-            return arr;
-          }
-        })(jQuery);
-
-
-      });
     </script>
 
 
