@@ -14,7 +14,7 @@ html {font-size:100.01%;}
 body {
   font-size: 100%;
   font-family: 'Aller-Regular', Helvetica, Arial, 'Helvetica Neue';
-  
+
   font-family: ;
   color: #3A3833;
 }
@@ -156,6 +156,11 @@ article header {
   background: #D03800;
 }
 
+.next .attention {
+  font-style: italic;
+  color: #D03800;
+}
+
 aside,
 footer,
 .next p {
@@ -226,6 +231,7 @@ ul li p {
 .first {
   clear: both;
 }
+
 ul.two > li.last {
   margin-right: 0;
 }
@@ -281,7 +287,7 @@ ul.two > li.last {
   font-family: 'Aller-Bold';
 }
 
-.talk_download{
+.talk_download {
   display: block;
   background: url('../images/slide-icon.png') no-repeat;
   background-position: bottom;
@@ -289,11 +295,11 @@ ul.two > li.last {
   height: 32px;
   float: right;
   text-indent: -9999px;
-  white-space: nowrap; 
+  white-space: nowrap;
   margin: 2px;
 }
 
-.talk_download:hover{
+.talk_download:hover {
   background-position: top;
 }
 
@@ -491,7 +497,7 @@ footer a:focus {
     height:auto !important;
     height: 5em;
   }
-  
+
   h4{
     width: 85%;
   }
@@ -532,7 +538,7 @@ screen and (max-width:320px) {
     display: inline-block;
     margin: 0;
   }
-  
+
 }
 
 
@@ -546,7 +552,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
     background-image: url('../images/logo-b@2x.png');
     background-size: auto 214px;
   }
-  
+
   .talk_download{
     background: url('../images/slide-icon@2x.png') no-repeat;
     background-size: 32px auto;
