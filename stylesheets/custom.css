@@ -104,7 +104,6 @@ nav ul {
 
 nav ul {
   text-align: center;
-  /*ji*/
 }
 
 nav ul li {
@@ -136,6 +135,11 @@ article {
 /* design */
 body {
   background: #fff;
+}
+
+hr{
+  border: 0.12em dotted #c4c2be;
+  margin-bottom: 1em;
 }
 
 /* state changes (special styles for next meetup) */
@@ -547,6 +551,11 @@ screen and (max-width:320px) {
 @media
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
+  
+  img {
+  	max-width: 100%;
+  	height: auto;
+  }
 
 /* Hi-res logos */
   #logo a {
