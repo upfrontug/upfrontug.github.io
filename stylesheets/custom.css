@@ -546,6 +546,18 @@ screen and (max-width:320px) {
 
 }
 
+/* fluid image */
+
+.flex_img {
+  display: block;
+  width: 100%;
+}
+
+.flex_img img {
+  width: 100%;
+  height: auto;
+}
+
 
 /* iPhone 4 ----------- */
 @media
