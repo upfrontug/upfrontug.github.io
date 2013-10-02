@@ -558,6 +558,26 @@ screen and (max-width:320px) {
   height: auto;
 }
 
+/* fliud video */
+.flex_vid {
+  float: none;
+  clear: both;
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  margin: 2em 0 1em 0;
+}
+ 
+.flex_vid iframe {
+  position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+}
+
 
 /* iPhone 4 ----------- */
 @media
