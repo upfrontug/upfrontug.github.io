@@ -9,8 +9,6 @@
   "gitHead": "87c5e4310cfaab4f80c249b7b6721a62c4430a43",
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-jekyll": "~0.3.9",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-csslint": "~0.1.2"
+    "grunt-sass": "~0.6.1"
   }
 }
