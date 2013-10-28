@@ -259,9 +259,9 @@ a {
 ul {
   margin: 0 0 1.5em 0;
   padding: 1.5em 0 0 0;
-  list-style: none;
+  //list-style: none;
   li {
-    list-style: none;
+    //list-style: none;
     margin: 0 0 1.5em 0;
     padding: 0;
   }
@@ -280,13 +280,9 @@ ul {
   }
 }
 
-p {
-  li {
-    list-style: disc;
-  }
-}
 
 .talks li{
+  list-style: none;
    p {
     clear: both;
    }
