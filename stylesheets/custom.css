@@ -213,6 +213,9 @@ ul {
   ul li h4, ul li p {
     padding: 1px; }
 
+p li {
+  list-style: disc; }
+
 .talks li p {
   clear: both; }
 .talks li img {

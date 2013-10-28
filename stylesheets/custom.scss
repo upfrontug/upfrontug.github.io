@@ -280,6 +280,12 @@ ul {
   }
 }
 
+p {
+  li {
+    list-style: disc;
+  }
+}
+
 .talks li{
    p {
     clear: both;
