@@ -445,13 +445,14 @@ ul.two > li.last {
 .team {
   overflow: hidden;
   padding-top: 0;
+  list-style: none;
   li {
     font-size: 0.75em;
     text-align: center;
-    width: 23%;
+    width: 31%;
     margin-right: 2.6%;
     float: left;
-    &:nth-child(4n), &.last {
+    &:nth-child(3n), &.last {
       margin-right: 0px;
     }
   }
