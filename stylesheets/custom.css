@@ -228,6 +228,9 @@ ul {
   .talk_example .speaker_links {
     margin-bottom: 0.5em; }
 
+.small_meetup_print {
+  font-size: 0.75em; }
+
 .first {
   clear: both; }
 

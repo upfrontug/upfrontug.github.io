@@ -9,7 +9,7 @@ icbm: 52.500188,13.41936
 
 /* TEAM */
 
-The website was built by 
+Contributors to this website:
 - Kristina Schneider, @kriesse
 - Max Fellmuth, @maxfell
 - Robin Mehner, @rmehner
@@ -19,7 +19,7 @@ up.front is run by
 - Kristina Schneider, @kriesse
 - Max Fellmuth, @maxfell
 - Alex Feyerke, @espylaub
-- Karl Westin, @karlwestin
+- Katharina Jockenhöfer, @qate_oh
 
 Thanks to everyone who has supported us over the years, especially:
 co.up coworking space, Thilo and Alex, Robin, Jan, Hannes, and the Republic of Uganda for their TLD (Asante!)
