@@ -2,3 +2,4 @@
 _site
 node_modules
 .gitignore
+npm-debug.log
