@@ -347,10 +347,10 @@ ul.two > li.last {
   .team li {
     font-size: 0.75em;
     text-align: center;
-    width: 31%;
+    width: 23%;
     margin-right: 2.6%;
     float: left; }
-    .team li:nth-child(3n), .team li.last {
+    .team li:nth-child(4n), .team li.last {
       margin-right: 0px; }
   .team span {
     font-size: 0.75em; }
@@ -363,7 +363,7 @@ ul.two > li.last {
   background: white;
   color: #a01f0c;
   text-decoration: none;
-  min-height: 14.5em; }
+  min-height: 15.5em; }
   .team_inner h4 {
     margin-bottom: 0.5em;
     float: none; }
