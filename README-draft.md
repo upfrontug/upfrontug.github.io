@@ -18,7 +18,7 @@ for webdesigners & frontend developers in Berlin
 If you would like to contribute to our site, please fork the project and then submit a pull request. We appreciate your help and will try to get back to you as soon as possible. 
 
 #Adding a new meetup
-todo
+todoo
 
 ##Publishing
 todo
