@@ -10,7 +10,7 @@
     {% for post in site.posts %}
         <article  class="{{post.class}}" id="{{post.date | date:'%m-%d-%Y'}}">
         <header>
-          <h2>{{post.date | date:'%A, %B %d'}}, {{post.meetup_time}}</h2>
+          <h2 class="title-block">{{post.date | date:'%A, %B %d'}}, {{post.meetup_time}}</h2>
         </header>
         <p>
           {{ post.content }}
@@ -28,4 +28,3 @@
   <p><a href="archive.html">&raquo; See archive</a> for previous events</p>
 
 </div>
-
