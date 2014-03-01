@@ -68,6 +68,10 @@ body {
   color: #3a3833;
 }
 
+.center{
+    text-align: center;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   color: #57544f;
@@ -80,6 +84,12 @@ h1 {
   font-size: 1.2em;
   text-transform: uppercase;
   color: $orange;
+}
+
+h2 {
+    line-height: 1;
+    font-family: 'Aller-Bold';
+    color: $orange;
 }
 
 h3 {
@@ -195,7 +205,7 @@ hr {
 
 /* state changes (special styles for next meetup) */
 
-h2 {
+h2.title-block {
   font-family: 'AllerDisplay-Regular';
   font-size: 2em;
   padding: 0.5em 0;
@@ -210,7 +220,7 @@ article header {
 }
 
 .next {
-  h2 {
+  h2.title-block {
     color: white;
     background: $orange;
   }
