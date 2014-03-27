@@ -1,6 +1,8 @@
 #up.front.ug
 
-up.front is a monthly meetup 
+[![Fund us on Gittip](https://www.gittip.com/assets/7.0.8/logo.png)](https://www.gittip.com/upfront_ug/)
+
+up.front is a monthly meetup
 for webdesigners & frontend developers in Berlin
 
 * **Website**: http://up.front.ug
@@ -13,12 +15,6 @@ for webdesigners & frontend developers in Berlin
 
 ---
 
-#Get started
+#Contributing
 
-If you would like to contribute to our site, please fork the project and then submit a pull request. We appreciate your help and will try to get back to you as soon as possible. 
-
-#Adding a new meetup
-todoo
-
-##Publishing
-todo
+If you would like to contribute to our site, please fork the project and then submit a pull request. We appreciate your help and will try to get back to you as soon as possible.
