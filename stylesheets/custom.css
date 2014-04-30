@@ -237,7 +237,11 @@ ul {
     margin-bottom: 0.5em; }
 
 .small_meetup_print {
-  font-size: .75em; }
+  font-size: 0.75em;
+  display: none; }
+
+.next .small_meetup_print {
+  display: block; }
 
 .first {
   clear: both; }
@@ -284,7 +288,7 @@ ul.two > li.last {
 
 .talk_download {
   display: block;
-  background: url("../images/slide-icon.png") no-repeat;
+  background: url('../images/slide-icon.png') no-repeat;
   background-position: bottom;
   width: 32px;
   height: 32px;
@@ -414,18 +418,15 @@ footer {
     width: 95%;
     max-width: none;
     margin: 1.5em auto 4.5em auto; }
-
   ul.two > li, .first, .last {
     width: auto;
     float: none;
     margin: 0 0 3em 0; }
-
   .team li {
     width: 48%;
     margin-right: 3%; }
     .team li:nth-child(2n) {
       margin-right: 0px; }
-
   .social a {
     min-height: 5em;
     height: auto !important;
@@ -434,35 +435,31 @@ footer {
       min-height: 5em;
       height: auto !important;
       height: 5em; }
-
   h4 {
     width: 85%; } }
+
 @media screen and (max-device-width: 320px), screen and (max-width: 320px) {
   html {
     -webkit-text-size-adjust: none;
     -ms-text-size-adjust: none; }
-
   h2 {
     font-size: 1.2em; }
-
   aside {
     font-size: 1em; }
-
   article {
     margin-bottom: 3em; }
     article header {
       margin-bottom: 1.5em; }
-
   .social a {
     font-size: 0.75em;
     padding: 9.5em 1em 1.5em 1em; }
     .social a:link, .social a:visited {
       font-size: 0.75em;
       padding: 9.5em 1em 1.5em 1em; }
-
   nav ul li {
     display: inline-block;
     margin: 0; } }
+
 /* fluid image */
 .flex_img {
   display: block;
@@ -494,12 +491,10 @@ footer {
   img {
     max-width: 100%;
     height: auto; }
-
   #logo a {
-    background-image: url("../images/logo-b@2x.png");
+    background-image: url('../images/logo-b@2x.png');
     background-size: auto 214px; }
-
   .talk_download {
-    background: url("../images/slide-icon@2x.png") no-repeat;
+    background: url('../images/slide-icon@2x.png') no-repeat;
     background-size: 32px auto;
     background-position: bottom; } }

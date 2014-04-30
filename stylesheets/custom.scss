@@ -315,6 +315,11 @@ ul {
 
 .small_meetup_print {
   font-size: .75em;
+  display: none;
+}
+
+.next .small_meetup_print {
+  display: block;
 }
 
 .first {
