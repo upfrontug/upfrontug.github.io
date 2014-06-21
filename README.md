@@ -1,7 +1,5 @@
 #up.front.ug
 
-[![Support us via Gittip](https://rawgithub.com/twolfson/gittip-badge/0.2.0/dist/gittip.png)](https://www.gittip.com/upfront_ug/)
-
 up.front is a monthly meetup
 for webdesigners & frontend developers in Berlin
 
