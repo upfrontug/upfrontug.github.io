@@ -64,7 +64,7 @@ html {
 
 body {
   font-size: 100%;
-  font-family: 'Aller-Regular', Helvetica, Arial, 'Helvetica Neue';
+  font-family: 'Fira Sans', Helvetica, Arial, 'Helvetica Neue';
   color: #3a3833;
 }
 
@@ -88,7 +88,8 @@ h1 {
 
 h2 {
     line-height: 1;
-    font-family: 'Aller-Bold';
+    font-family: 'Fira Sans';
+    font-weight: 500;
     color: $orange;
 }
 
@@ -96,14 +97,16 @@ h3 {
   font-size: 1.5em;
   line-height: 1;
   margin-bottom: 1em;
-  font-family: 'Aller-Bold';
+  font-family: 'Fira Sans';
+  font-weight: 500;
   text-align: center;
 }
 
 h4 {
   font-size: 1em;
   margin-bottom: 0;
-  font-family: 'Aller-Bold';
+  font-family: 'Fira Sans';
+  font-weight: 500;
   color: $orange;
   float: left;
   /* For slide download on the right */
@@ -119,12 +122,14 @@ p {
 em, i {
   font-weight: normal;
   font-style: normal;
-  font-family: 'Aller-Italic';
+  font-family: 'Fira Sans';
+  font-style: italic;
 }
 
 aside {
   font-size: 1.25em;
-  font-family: 'Aller-Italic';
+  font-family: 'Fira Sans';
+  font-style: italic;
   margin: 1em 0 3.5em 0;
   color: #57544f;
   text-align: center;
@@ -206,7 +211,8 @@ hr {
 /* state changes (special styles for next meetup) */
 
 h2.title-block {
-  font-family: 'AllerDisplay-Regular';
+  font-family: 'Fira Sans';
+  font-weight: 500;
   font-size: 2em;
   padding: 0.5em 0;
   margin: 0;
@@ -331,7 +337,8 @@ ul.two > li.last {
 }
 
 .speaker_info {
-  font-family: 'Aller-Italic';
+  font-family: 'Fira Sans';
+  font-style: italic;
   border-top: 0.25em solid #b2b1ad;
   padding-top: 0.5em;
   margin-top: -0.75em;
@@ -373,7 +380,8 @@ ul.two > li.last {
 
 .cancelled_hint {
   text-decoration: none;
-  font-family: 'Aller-Bold';
+  font-family: 'Fira Sans';
+  font-weight: 500;
 }
 
 .talk_download {
