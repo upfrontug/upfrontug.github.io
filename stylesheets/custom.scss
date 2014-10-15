@@ -169,27 +169,42 @@ aside {
   }
 }
 
-nav ul {
-  text-align: center;
+nav {
+  ul {
+    text-align: center;
+  }
   li {
     display: inline-block;
     margin: 0 2.5%;
-    a {
-      display: inline-block;
-      padding: 0.5em 0.75em;
-      color: $dark_orange;
-      text-decoration: none;
-      &:link, &:visited {
-        display: inline-block;
-        padding: 0.5em 0.75em;
-        color: $dark_orange;
-        text-decoration: none;
-      }
-      &:hover, &:active, &:focus {
-        text-decoration: underline;
-      }
+  }
+  a {
+    display: inline-block;
+    padding: 0.5em 0.75em .4em;
+    color: $dark_orange;
+    text-decoration: none;
+    &:hover, &:active, &:focus {
+      text-decoration: underline;
     }
   }
+}
+.submit-btn {
+  background-color: $orange;
+  color: #FFF;
+  border-radius: 4px;
+  margin-left: 10px;
+  &:hover, &:active, &:focus {
+    color: #FFF;
+    background-color: $dark_orange;
+    text-decoration: none;
+  }
+}
+
+.banner {
+  background-color: $orange;
+  color: #FFF;
+  text-align: center;
+  font-size: .75em;
+  padding: .5em;
 }
 
 article {
@@ -249,20 +264,13 @@ a {
   -webkit-transition: color 0.3s ease, background-color 0.3s ease;
   -moz-transition: color 0.3s ease, background-color 0.3s ease;
   transition: color 0.3s ease, background-color 0.3s ease;
-  &:link, &:visited {
-    padding: 0 1px;
-    color: $dark_orange;
-    text-decoration: none;
-    -webkit-transition: color 0.3s ease, background-color 0.3s ease;
-    -moz-transition: color 0.3s ease, background-color 0.3s ease;
-    transition: color 0.3s ease, background-color 0.3s ease;
-  }
   &:hover, &:active, &:focus {
     color: $orange;
     text-decoration: underline;
     outline: none;
   }
 }
+
 
 /* facebook like button */
 
@@ -363,9 +371,6 @@ ul.two > li.last {
     list-style: none;
     a {
       color: #b2b1ad;
-      &:link, &:visited {
-        color: #b2b1ad;
-      }
       &:hover, &:active, &:focus {
         color: $orange;
         text-decoration: none;
@@ -423,17 +428,6 @@ ul.two > li.last {
     padding: 9.5em 2em 1.5em 2em;
     text-decoration: none;
     border-radius: 2px;
-    &:link, &:visited {
-      display: block;
-      min-height: 3em;
-      height: auto !important;
-      height: 3em;
-      color: $orange;
-      font-size: 0.875em;
-      padding: 9.5em 2em 1.5em 2em;
-      text-decoration: none;
-      border-radius: 2px;
-    }
     &:hover, &:active, &:focus {
       background-color: white;
       color: white;
@@ -504,11 +498,6 @@ ul.two > li.last {
   color: #3a3833;
   text-decoration: none;
   display: block;
-  &:link, &:visited {
-    color: #3a3833;
-    text-decoration: none;
-    display: block;
-  }
   &:hover, &:active, &:focus {
     color: #3a3833;
     text-decoration: underline;
@@ -535,7 +524,7 @@ footer {
   a {
     color: white;
     text-decoration: underline;
-    &:link, &:visited, &:hover, &:active, &:focus {
+    &:visited, &:hover, &:active, &:focus {
       color: white;
       text-decoration: underline;
     }
@@ -564,11 +553,6 @@ footer {
     min-height: 5em;
     height: auto !important;
     height: 5em;
-    &:link, &:visited {
-      min-height: 5em;
-      height: auto !important;
-      height: 5em;
-    }
   }
   h4 {
     width: 85%;
@@ -595,12 +579,8 @@ footer {
   .social a {
     font-size: 0.75em;
     padding: 9.5em 1em 1.5em 1em;
-    &:link, &:visited {
-      font-size: 0.75em;
-      padding: 9.5em 1em 1.5em 1em;
-    }
   }
-  nav ul li {
+  nav li {
     display: inline-block;
     margin: 0;
   }
@@ -693,7 +673,7 @@ form fieldset p.form-help {
 form input[type="submit"] {
 	margin: 0;
 	padding: 5px 10px;
-	font-size: 12px;	
+	font-size: 12px;
 	font-weight: bold;
 	border: 1px solid #ccc;
 	background: #eee;
