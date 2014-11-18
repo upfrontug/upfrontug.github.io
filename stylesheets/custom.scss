@@ -22,36 +22,6 @@ body {
   line-height: 1.5;
 }
 
-table {
-  border-collapse: separate;
-  border-spacing: 0;
-}
-
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-}
-
-table, td, th {
-  vertical-align: middle;
-}
-
-blockquote {
-  &:before, &:after {
-    content: "";
-  }
-}
-
-q {
-  &:before, &:after {
-    content: "";
-  }
-}
-
-blockquote, q {
-  quotes: "" "";
-}
-
 a img {
   border: none;
 }
@@ -68,8 +38,8 @@ body {
   color: #3a3833;
 }
 
-.center{
-    text-align: center;
+.center {
+  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -87,10 +57,10 @@ h1 {
 }
 
 h2 {
-    line-height: 1;
-    font-family: 'Fira Sans';
-    font-weight: 500;
-    color: $orange;
+  line-height: 1;
+  font-family: 'Fira Sans';
+  font-weight: 500;
+  color: $orange;
 }
 
 h3 {
@@ -283,9 +253,7 @@ a {
 ul {
   margin: 0 0 1.5em 0;
   padding: 1.5em 0 0 0;
-  //list-style: none;
   li {
-    //list-style: none;
     margin: 0 0 1.5em 0;
     padding: 0;
   }
@@ -494,20 +462,6 @@ ul.two > li.last {
   }
 }
 
-.team a {
-  color: #3a3833;
-  text-decoration: none;
-  display: block;
-  &:hover, &:active, &:focus {
-    color: #3a3833;
-    text-decoration: underline;
-  }
-  &:hover, &:active, &:focus {
-    color: $orange;
-    text-decoration: none;
-  }
-}
-
 footer {
   background: $orange;
   color: white;
@@ -524,10 +478,24 @@ footer {
   a {
     color: white;
     text-decoration: underline;
-    &:visited, &:hover, &:active, &:focus {
+    &:hover, &:active, &:focus {
       color: white;
       text-decoration: underline;
     }
+  }
+}
+
+.team a {
+  color: #3a3833;
+  text-decoration: none;
+  display: block;
+  &:hover, &:active, &:focus {
+    color: #3a3833;
+    text-decoration: underline;
+  }
+  &:hover, &:active, &:focus {
+    color: $orange;
+    text-decoration: none;
   }
 }
 
@@ -636,57 +604,51 @@ footer {
 }
 
 form fieldset {
-	margin: 0 0 20px 0;
-	font-size: 14px;
-	}
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  }
 form fieldset.form-actions {
-	margin: 0;
-	}
+  margin: 0;
+  }
 form fieldset label {
-	display: block;
-	margin: 0 0 5px 0;
-	font-weight: bold;
-	}
+  display: block;
+  margin: 0 0 5px 0;
+  font-weight: bold;
+  }
 form fieldset input.form-text, textarea.form-text {
-	display: block;
-	width: 50%;
-	padding: 5px;
-	font-size: 14px;
-	border: 1px solid #ddd;
-	background: #f5f5f5;
-	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
-	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
-	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	}
+  display: block;
+  width: 50%;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+  border-radius: 4px;
+  }
 form fieldset input.form-text:focus, textarea.form-text:focus {
-	border: 1px solid #ccc;
-	background: #fff;
-	}
+  border: 1px solid #ccc;
+  background: #fff;
+  }
 form fieldset p.form-help {
-	margin: 5px 0 0 0;
-	font-size: 12px;
-	color: #999;
-	}
+  margin: 5px 0 0 0;
+  font-size: 12px;
+  color: #999;
+  }
 form input[type="submit"] {
-	margin: 0;
-	padding: 5px 10px;
-	font-size: 12px;
-	font-weight: bold;
-	border: 1px solid #ccc;
-	background: #eee;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	}
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  background: #eee;
+  border-radius: 4px;
+  }
 form input[type="submit"]:hover,
 form input[type="submit"]:focus {
-	border: 1px solid #bbb;
-	background: #e5e5e5;
-	}
+  border: 1px solid #bbb;
+  background: #e5e5e5;
+  }
 form input[type="submit"]:active {
-	border: 1px solid #ccc;
-	background: #eee;
-	}
+  border: 1px solid #ccc;
+  background: #eee;
+  }
