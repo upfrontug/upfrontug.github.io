@@ -3,7 +3,7 @@
   "main": "Gruntfile.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rmehner/upfront_ug.git"
+    "url": "https://github.com/upfrontug/upfront_ug.git"
   },
   "readmeFilename": "README.md",
   "gitHead": "87c5e4310cfaab4f80c249b7b6721a62c4430a43",
