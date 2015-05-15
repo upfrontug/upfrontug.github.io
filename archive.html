@@ -2,19 +2,52 @@
   layout: default
 ---
 
+
+
       <div class="content">
 
+    {% for post in site.posts limit:1 %}
+        <article  class="{{post.class}} next" id="{{post.date | date:'%m-%d-%Y'}}">
+        <header>
+          <h2 class="title-block">{{post.date | date:'%A, %B %d'}}, {{post.meetup_time}}</h2>
+        </header>
+        <p>
+          {{ post.content }}
+        </p>
+        <p class="small_meetup_print">
+        Up.front is a free event, and you do not have to register anywhere. However it gets packed sometimes. Doors open half an hour before the event, talks do not start before {{post.meetup_time}}. Come early to make sure you get a seat! After the talks there’s time for conversations with tasty drinks or snacks at <a href="http://www.kremanski.de/">Kremanski</a>, a cosy coffeeshop and bistro just around the corner from our venue.
+        </p>
+        <p class="small_meetup_print">
+          <i>Accessibility</i>: If you would like to use the elevator, please tweet <a href="http://twitter.com/upfront_ug/">@upfront_ug</a> when you arrive.
+        </p>
+        <p class="small_meetup_print">
+          You are required to follow our <a href="codeofconduct.html">code of conduct</a>.
+        </p>
+      </article>
+    {% endfor %}
+
+    {% for post in site.posts offset:1 %}
+        <article class="{{post.class}}" id="{{post.date | date:'%m-%d-%Y'}}">
+        <header>
+          <h2 class="title-block">{{post.date | date:'%A, %B %d'}}, {{post.meetup_time}}</h2>
+        </header>
+        <p>
+          {{ post.content }}
+        </p>
+      </article>
+    {% endfor %}
+
+
+<!-- OLD meetups that have not yet been saved in separate posts -->
 
         <article>
           <header>
-            <h2>
+            <h2 class="title-block">
               Tuesday, December 11th 2012, 7:30pm
             </h2>
           </header>
            <p>
               Up.front’s holiday edition will bring you talks about CSS Testing and Styleguide Driven Development. We are looking forward to ring in the holiday break with Glühwein, cookies and you! See you on December 11th, 7:30 pm at co.up.
-            <br>
-              Follow us on <a href="http://twitter.com/upfront_ug">Twitter</a> for updates and RSVP on <a href="http://www.facebook.com/events/447508131977182/">Facebook</a>.
             </p>
 
             <ul class="talks">
@@ -68,15 +101,13 @@
 
         <article>
           <header>
-            <h2>
+            <h2 class="title-block">
               Tuesday, November 13th 2012, 7:30 pm
             </h2>
           </header>
 
           <p>
             Whoo, up.front #31! We have two exciting talks by Gunnar and Martijn. Also Rachel, organizer of HTML5BUG, will stop by and present her brand new usergroup and Nicolò will give a short demo of <a href="http://board.creonomy.com/">Board</a>. We are looking forward to seeing you on November 13th, 7:30 pm at co.up.
-          <br>
-            Follow us on <a href="http://twitter.com/upfront_ug">Twitter</a> for updates and RSVP on <a href="https://www.facebook.com/events/386475331433298/">Facebook</a>.
           </p>
 
           <ul class="talks">
@@ -120,7 +151,7 @@
         <article>
 
           <header>
-            <h2>
+            <h2 class="title-block">
               Tuesday, October 9th 2012, 7:30 pm
             </h2>
           </header>
@@ -194,32 +225,24 @@
 
 
           <article>
-
             <header>
-              <h2 style="text-decoration: line-through;">
+              <h2 class="title-block" style="text-decoration: line-through;">
                 Tuesday, September 11th 2012
               </h2>
             </header>
-
             <p>
               Sorry, no meetup this month. We will be back on October 9th.
             </p>
-
           </article>
 
           <article>
-
             <header>
-              <h2>
+              <h2 class="title-block">
                 Tuesday, August 14th 2012, 7:30 pm
               </h2>
             </header>
-
             <p>
               Hi Frondendeers (that’s like a buccaneer or a rocketeer, but with markup)! Join us on Tuesday, August the 14th, for up.front meetup number 29, with talks on design, some hopefully spirited discussion, enjoyable socializing and tasty drinks afterward.
-            </p>
-            <p>
-              Follow us on <a href="http://twitter.com/upfront_ug">Twitter</a> for updates and RSVP on <a href="http://www.facebook.com/events/347467171995529/">Facebook</a>.
             </p>
 
             <ul class="talks">
@@ -276,17 +299,12 @@
           <article>
 
             <header>
-              <h2>
+              <h2 class="title-block">
                 Tuesday, July 10th 2012, 7:30 pm
               </h2>
             </header>
 
             <p>And we’re back, and I’m confused, because I’m tzping this on up.front founder @kriesse’s US keyboard, who has returned from San Francisco for a month! In other news, our central theme this week seems to be “high resolution”, with one talk about publishing a magazine, and a second one about resolution-independent front-end work in the wake of even more pixel-density diversity. On a completely different note, RailsGirls will be stopping by to tell us about their awesome project.</p>
-            <p>
-              As always, up.front takes place at <a href="http://co-up.de/">co.up co-working</a> in Kreuzberg. <strong>PLEASE NOTE: We’re now located in co.up’s brand new rooms in the third floor. This means more space for you and less stairs to climb.</strong>
-            </p>
-            <p>If you’ve got anything to add for this month’s meetup or any talk ideas for the next months, please get in touch via <a href="http://twitter.com/upfront_ug">Twitter</a> or on <a href="http://www.facebook.com/up.front.ug">Facebook</a>.
-            </p>
 
             <ul class="talks">
 
@@ -325,17 +343,13 @@
 
           <article>
             <header>
-              <h2>
+              <h2 class="title-block">
                 Tuesday, June 12th 2012, 7:30 pm
               </h2>
             </header>
 
             <p>
               In June we have talks by Martin Spindler, Horia Dragomir and Alex Feyerke. As always, up.front takes place at <a href="http://co-up.de/">co.up co-working</a> in Kreuzberg. <strong>NEW: For the first time we’ll use co.up’s brand new rooms in the third floor. This means more space for you and less stairs to walk.</strong>
-            </p>
-
-            <p>
-              Follow us on <a href="http://twitter.com/upfront_ug">Twitter</a> for updates and RSVP on <a href="http://www.facebook.com/events/365371273517398/">Facebook</a>.
             </p>
 
             <ul class="talks">
@@ -391,7 +405,7 @@
 
           <article>
             <header>
-              <h2>
+              <h2 class="title-block">
                 Tuesday, May 8th 2012, 7:30 pm
               </h2>
             </header>
@@ -435,38 +449,12 @@
               Found out about a cool new tool or technology? Want to talk about a project that fits into the web design or frontend category? You’re always welcome to give a more or less spontaneous lightning talk.
             </p>
 
-            <p>
-             Follow us on <a href="http://twitter.com/upfront_ug">Twitter</a> and RSVP on <a href="http://www.facebook.com/events/241390145968293">Facebook</a>.
-            </p>
-
-
-
-        <!--
-            <ul class="talks">
-
-              <li>
-                <h4><span>Speaker:</span> Title</h4>
-                <p>
-                  desc
-                </p>
-                <p class="speaker_info">
-                  sepaker info
-                </p>
-                <ul class="speaker_links">
-                  <li><a href="http://www.site.com/">site.com</a></li>
-                  <li><a href="http://twitter.com/handle">@handle</a></li>
-                </ul>
-              </li>
-
-            </ul>
-          -->
-
           </article>
 
 
           <article>
             <header>
-              <h2>
+              <h2 class="title-block">
                 Tuesday, April 10th 2012, 7:30 pm
               </h2>
             </header>
@@ -510,37 +498,14 @@
                   <li><a href="http://www.tillwiedeck.com">www.tillwiedeck.com</a></li>
                 </ul>
               </li>
-
             </ul>
-
-        <!--
-
-            <ul class="talks">
-
-              <li>
-                <h4><span>Speaker:</span> Title</h4>
-                <p>
-                  desc
-                </p>
-                <p class="speaker_info">
-                  sepaker info
-                </p>
-                <ul class="speaker_links">
-                  <li><a href="http://www.site.com/">site.com</a></li>
-                  <li><a href="http://twitter.com/handle">@handle</a></li>
-                </ul>
-              </li>
-
-            </ul>
-            -->
-
           </article>
 
 
 
           <article>
             <header>
-              <h2>
+              <h2 class="title-block">
                 Tuesday, March 13th 2012, 8:00 pm
               </h2>
             </header>
@@ -549,11 +514,9 @@
             </p>
           </article>
 
-
-
           <article>
             <header>
-              <h2>
+              <h2 class="title-block">
                 Tuesday, February 14th 2012, 7:30 pm
               </h2>
             </header>
@@ -630,7 +593,7 @@
 
           <article>
              <header>
-               <h2>
+               <h2 class="title-block">
                  Tuesday, December 13th 2011, 8:00 pm
                </h2>
              </header>
@@ -638,22 +601,14 @@
                This month we’ll be hosting a crowd-based experiment in collaborative consumption (of cookies and drinks) in the festive atmosphere of a bar named after an actor known for playing Dracula, Santa’s arch nemesis. So it all makes sense.
                </p>
                <p>
-               Come and join us at Lugosi (corner of Reichenberger and Manteuffel in Kreuzberg) at 20:00 on December 13th, enjoy some beers and Cola from Corsica (seriously, they have that there). We’ll provide a variety of cookies and other portable nomables, but feel free to bring some of your own as well. See you all there!
-             </p>
-
-             <p>
-               <a href="http://maps.google.com/maps/ms?msid=217650843440300277520.0004b2f26bdc18ca851eb&msa=0&ll=52.497419,13.424527&spn=0.00068,0.001742">Directions</a>
-             </p>
-
-             <p>
-               Follow us on <a href="http://twitter.com/upfront_ug">Twitter</a> for updates and RSVP on <a href="http://www.facebook.com/events/254110151311594">Facebook</a><!-- or <a href="http://plancast.com/p/875s/upfrontug-21st">Plancast</a>-->.
+               Come and join us at <a href="http://maps.google.com/maps/ms?msid=217650843440300277520.0004b2f26bdc18ca851eb&msa=0&ll=52.497419,13.424527&spn=0.00068,0.001742">Lugosi (corner of Reichenberger and Manteuffel in Kreuzberg)</a> at 8pm on December 13th, enjoy some beers and Cola from Corsica (seriously, they have that there). We’ll provide a variety of cookies and other portable nomables, but feel free to bring some of your own as well. See you all there!
              </p>
            </article>
 
 
                 <article>
                   <header>
-                    <h2>
+                    <h2 class="title-block">
                       Tuesday, November 8th 2011, 7:30 pm
                     </h2>
                   </header>
@@ -663,8 +618,6 @@
 
 
                   <ul class="talks">
-
-
                     <li>
                       <h4><span>Ivo Gabrowitsch:</span> App Fonts – The New Web Fonts</h4>
                       <p>
@@ -723,7 +676,7 @@
 
                 <article>
                   <header>
-                    <h2>
+                    <h2 class="title-block">
                       Tuesday, October 11th 2011, 7:30 pm
                     </h2>
                   </header>
@@ -731,10 +684,6 @@
                     On Tuesday, October 11th, we will feature Caitlin Winner, Marco Hamersma and Malte Müller. Additionally we will hear lightning talks by Benjamin Kampmann and Patrick Hüsler.
                     <br />
                     You found a cool new tool, technology or case that fits into the web design or frontend category? Share it with us. You are always welcome to take a slot for a lightning talk. The location remains unchanged and is hosted by the <a href="http://co-up.de/">co.up co-working space</a> providing chairs and drinks for cheap.
-                  </p>
-
-                  <p>
-                    Follow us on <a href="http://twitter.com/upfront_ug">Twitter</a> for updates and RSVP on <a href="http://www.facebook.com/event.php?eid=115319335242271">Facebook</a> or <a href="http://plancast.com/p/7s7l/upfrontug-20th-twentieth">Plancast</a>.
                   </p>
 
                   <ul class="talks">
@@ -790,16 +739,12 @@
 
                 <article>
                   <header>
-                    <h2>
+                    <h2 class="title-block">
                       Tuesday, September 13th 2011, 7:30 pm
                     </h2>
                   </header>
                   <p>
                     The up.front summer break is over! On our September meetup we will have Gernot Poetsch, Max Fellmuth and Tim Lucas. Lightning talk by <a href="http://twitter.com/gkob">Georgi Kobilarov</a>. <br />You found a cool new tool, technology or case that fits into the web design or frontend category? Share it with us. You are always welcome to take a slot for a lightning talk. The location remains unchanged and is hosted by the <a href="http://co-up.de/">co.up co-working space</a> providing chairs and drinks for cheap.
-                  </p>
-
-                  <p>
-                    Follow us on <a href="http://twitter.com/upfront_ug">Twitter</a> for updates and RSVP on <a href="http://www.facebook.com/home.php?#!/event.php?eid=185075301559135">Facebook</a> or <a href="http://plancast.com/p/6ykv/upfrontug-19th">Plancast</a>.
                   </p>
 
                   <ul class="talks">
@@ -852,7 +797,7 @@
 
         <article>
           <header>
-            <h2>
+            <h2 class="title-block">
               June – August 2011
             </h2>
           </header>
@@ -863,7 +808,7 @@
 
         <article>
           <header>
-            <h2>
+            <h2 class="title-block">
               Tuesday, May 10th 2011
             </h2>
           </header>
@@ -924,12 +869,12 @@
 
         <article>
           <header>
-            <h2>
+            <h2 class="title-block">
               Tuesday, April 12th 2011
             </h2>
           </header>
 
-         <ul class="talks two">
+         <ul class="talks">
             <li>
               <h4><span>Nadine Roßa:</span> The letter ß </h4>
               <p>
@@ -970,7 +915,7 @@
 
         <article>
           <header>
-            <h2>
+            <h2 class="title-block">
               Tuesday, March 8th 2011
             </h2>
           </header>
@@ -1015,7 +960,7 @@
 
         <article>
           <header>
-            <h2>
+            <h2 class="title-block">
               Tuesday, February 8th 2011
             </h2>
           </header>
@@ -1032,11 +977,6 @@
                 <li><a href="http://www.metteilene.com/">metteilene.com</a></li>
                 <li><a href="http://twitter.com/metteIlene">@metteIlene</a></li>
               </ul>
-            </li>
-            <li>
-              <h4 class="cancelled"><span>Floris Dekker:</span> On user interface details</h4>
-              <p class="cancelled">Floris, designer at <a href="http://yourneighbours.de/">Your Neighbours</a>, will talk about the relevance and some history of user interface details. He will also go through the success behind his Little Big Details blog and his vision on curating UI details.</p>
-              <p class="cancelled_hint">This talk was cancelled</p>
             </li>
             <li class="last">
               <h4><span>Torsten Bergler &amp; Thomas Michelbach:</span> Location Based Services</h4>
@@ -1060,7 +1000,7 @@
 
         <article>
           <header>
-            <h2>
+            <h2 class="title-block">
               Tuesday, January 11th 2011
             </h2>
           </header>
@@ -1071,7 +1011,7 @@
             We’ve got some talks to help you out.
           </p>
 
-          <ul class="talks two">
+          <ul class="talks">
             <li>
               <h4><span>Tiffany Conroy:</span> How to Build a Bookmarklet</h4>
 
@@ -1116,7 +1056,7 @@
 
         <article>
           <header>
-            <h2>
+            <h2 class="title-block">
               Tuesday, December 14th 2010
             </h2>
           </header>
@@ -1131,14 +1071,14 @@
             This is also a great chance to give us feedback about past events.
           </p>
 
-          <p>PS: Baked some tasty cookies, bring ’em! :-)</p>
+          <p>PS: Baked some tasty cookies? Bring ’em! :-)</p>
 
         </article>
 
 
         <article>
           <header>
-            <h2>
+            <h2 class="title-block">
               Tuesday, November 9th 2010
             </h2>
           </header>
@@ -1186,12 +1126,12 @@
 
         <article>
           <header>
-            <h2>
+            <h2 class="title-block">
               Tuesday, October 12th 2010
             </h2>
           </header>
 
-          <ul class="talks two">
+          <ul class="talks">
             <li>
               <h4><span>Christoph Rauscher:</span> Using commercial webfonts</h4>
 
@@ -1222,12 +1162,12 @@
 
         <article>
           <header>
-            <h2>
+            <h2 class="title-block">
               Tuesday, September 14th 2010
             </h2>
           </header>
 
-          <ul class="talks two">
+          <ul class="talks">
             <li>
               <h4><span>Malte Müller:</span> More pixels or none at all. Designing interfaces for better screens.</h4>
               <p>
@@ -1264,9 +1204,9 @@
 
         <article>
           <header>
-          <h2>
+            <h2 class="title-block">
               Tuesday, July 13th 2010
-          </h2>
+            </h2>
           </header>
 
           <ul class="talks">
@@ -1289,10 +1229,9 @@
 
         <article>
           <header>
-          <h2>
-              Tuesday, June 8th 2010<br/>
-              Grids in Webdesign, CSS (Layout) Frameworks
-          </h2>
+            <h2 class="title-block">
+              Tuesday, June 8th 2010
+            </h2>
           </header>
 
           <ul class="talks">
@@ -1312,10 +1251,7 @@
               <h4><span>Kristina Schneider:</span> CSS layout frameworks</h4>
               <p>
               Are they pure evil? Do we need them at all? This talk will anticipate some common prejudices and identifies possible use cases for CSS frameworks.
-              Kristina Schneider is a freelance webdesigner who can code her own designs.
-              <br />
-              More on <a href="http://kristinaschneider.com">kristinaschneider.com</a>.
-              </p>
+            </p>
               <p class="speaker_info">
                 Kristina Schneider is a freelance art director with a passion for CSS and all things frontend.
               </p>
@@ -1359,9 +1295,9 @@
 
         <article>
           <header>
-          <h2>
+            <h2 class="title-block">
               Tuesday, May 11th 2010
-          </h2>
+            </h2>
           </header>
 
           <ul class="talks">

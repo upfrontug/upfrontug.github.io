@@ -7,8 +7,8 @@
 <div class="content">
 
   <ul>
-    {% for post in site.posts %}
-        <article  class="{{post.class}}" id="{{post.date | date:'%m-%d-%Y'}}">
+    {% for post in site.posts limit:1 %}
+        <article  class="{{post.class}} next" id="{{post.date | date:'%m-%d-%Y'}}">
         <header>
           <h2 class="title-block">{{post.date | date:'%A, %B %d'}}, {{post.meetup_time}}</h2>
         </header>
@@ -26,8 +26,19 @@
         </p>
       </article>
     {% endfor %}
+    
+    {% for post in site.posts offset:1 limit:2 %}
+        <article class="{{post.class}}" id="{{post.date | date:'%m-%d-%Y'}}">
+        <header>
+          <h2 class="title-block">{{post.date | date:'%A, %B %d'}}, {{post.meetup_time}}</h2>
+        </header>
+        <p>
+          {{ post.content }}
+        </p>
+      </article>
+    {% endfor %}
   </ul>
 
-  <p><a href="archive.html">&raquo; See archive</a> for previous events</p>
+  <p><a href="archive.html">&raquo; See archive</a> for all previous events</p>
 
 </div>
