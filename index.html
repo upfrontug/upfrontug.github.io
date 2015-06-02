@@ -6,38 +6,36 @@
 
 <div class="content">
 
-  <ul>
-    {% for post in site.posts limit:1 %}
-        <article  class="{{post.class}} next" id="{{post.date | date:'%m-%d-%Y'}}">
-        <header>
-          <h2 class="title-block">{{post.date | date:'%A, %B %d'}}, {{post.meetup_time}}</h2>
-        </header>
-        <p>
-          {{ post.content }}
-        </p>
-        <p class="small_meetup_print">
-        Up.front is a free event, and you do not have to register anywhere. However it gets packed sometimes. Doors open half an hour before the event, talks do not start before {{post.meetup_time}}. Come early to make sure you get a seat! After the talks there’s time for conversations with tasty drinks or snacks at <a href="http://www.kremanski.de/">Kremanski</a>, a cosy coffeeshop and bistro just around the corner from our venue.
-        </p>
-        <p class="small_meetup_print">
-          <i>Accessibility</i>: If you would like to use the elevator, please tweet <a href="http://twitter.com/upfront_ug/">@upfront_ug</a> when you arrive.
-        </p>
-        <p class="small_meetup_print">
-          You are required to follow our <a href="codeofconduct.html">code of conduct</a>.
-        </p>
-      </article>
-    {% endfor %}
-    
-    {% for post in site.posts offset:1 limit:2 %}
-        <article class="{{post.class}}" id="{{post.date | date:'%m-%d-%Y'}}">
-        <header>
-          <h2 class="title-block">{{post.date | date:'%A, %B %d'}}, {{post.meetup_time}}</h2>
-        </header>
-        <p>
-          {{ post.content }}
-        </p>
-      </article>
-    {% endfor %}
-  </ul>
+{% for post in site.posts limit:1 %}
+    <article  class="{{post.class}} next" id="{{post.date | date:'%m-%d-%Y'}}">
+    <header>
+      <h2 class="title-block">{{post.date | date:'%A, %B %d'}}, {{post.meetup_time}}</h2>
+    </header>
+    <p>
+      {{ post.content }}
+    </p>
+    <p class="small_meetup_print">
+    Up.front is a free event, and you do not have to register anywhere. However it gets packed sometimes. Doors open half an hour before the event, talks do not start before {{post.meetup_time}}. Come early to make sure you get a seat! After the talks there’s time for conversations with tasty drinks or snacks at <a href="http://www.kremanski.de/">Kremanski</a>, a cosy coffeeshop and bistro just around the corner from our venue.
+    </p>
+    <p class="small_meetup_print">
+      <i>Accessibility</i>: If you would like to use the elevator, please tweet <a href="http://twitter.com/upfront_ug/">@upfront_ug</a> when you arrive.
+    </p>
+    <p class="small_meetup_print">
+      You are required to follow our <a href="codeofconduct.html">code of conduct</a>.
+    </p>
+  </article>
+{% endfor %}
+
+{% for post in site.posts offset:1 limit:2 %}
+    <article class="{{post.class}}" id="{{post.date | date:'%m-%d-%Y'}}">
+    <header>
+      <h2 class="title-block">{{post.date | date:'%A, %B %d'}}, {{post.meetup_time}}</h2>
+    </header>
+    <p>
+      {{ post.content }}
+    </p>
+  </article>
+{% endfor %}
 
   <p><a href="archive.html">&raquo; See archive</a> for all previous events</p>
 
