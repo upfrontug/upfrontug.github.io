@@ -4,16 +4,14 @@
 
 
 
-      <div class="content">
+<div class="content">
 
     {% for post in site.posts limit:1 %}
         <article  class="{{post.class}} next" id="{{post.date | date:'%m-%d-%Y'}}">
         <header>
           <h2 class="title-block">{{post.date | date:'%A, %B %d'}}, {{post.meetup_time}}</h2>
         </header>
-        <p>
-          {{ post.content }}
-        </p>
+        {{ post.content }}
         <p class="small_meetup_print">
         Up.front is a free event, and you do not have to register anywhere. However it gets packed sometimes. Doors open half an hour before the event, talks do not start before {{post.meetup_time}}. Come early to make sure you get a seat! After the talks there’s time for conversations with tasty drinks or snacks at <a href="http://www.kremanski.de/">Kremanski</a>, a cosy coffeeshop and bistro just around the corner from our venue.
         </p>
@@ -1331,5 +1329,5 @@
         </article>
 
 
-      </div>
+</div>
 
