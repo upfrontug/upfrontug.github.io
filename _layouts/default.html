@@ -1,43 +1,8 @@
 <!DOCTYPE html>
 <html xmlns:og="http://ogp.me/ns#" xmlns:example="http://example.com/ns/#">
-  <head>
-    <title>up.front – webdesign &amp; frontend meetup berlin</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta property="og:title" content="up.front – Webdesign and Frontend Meetup Berlin" />
-    <meta property="og:type" content="example:usergroup" />
-    <meta property="og:url" content="http://up.front.ug" />
-    <meta property="og:image" content="http://up.front.ug/images/logo-fb.jpg" />
-    <meta property="og:site_name" content="up.front.ug" />
-    <meta property="og:description" content="up.front is a monthly meetup focused on web design and frontend development topics, based in Berlin. Everyone is welcome to participate, either by attending or giving a talk themselves." />
+  {% include head.html %}
 
-    <meta charset="utf-8" />
-
-    <meta name="keywords" content="Frontend, Design, Webdesign, HTML5, CSS, Coding, Nerds, Usergroup, Berlin, meetup">
-    <meta name="description" content="up.front is a monthly meetup focused on web design and frontend development topics, based in Berlin. Everyone is welcome to participate, either by attending or giving a talk themselves.">
-    <link rel="author" href="humans.txt" />
-
-    <!--[if IE]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <style>
-      article, aside, dialog, figure, footer, header,
-      hgroup, menu, nav, section { display: block; }
-    </style>
-
-    <link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,500,400italic,500italic' rel='stylesheet' type='text/css'>
-
-
-    <link rel="stylesheet" href="stylesheets/custom.css" type="text/css" media="screen, projection" />
-    <link rel="stylesheet" href="stylesheets/print.css" type="text/css" media="print" />
-    <!--[if lt IE 8]>
-      <link rel="stylesheet" href="stylesheets/ie.css" type="text/css" media="screen, projection" />
-    <![endif]-->
-
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-    <link rel="shortcut icon" href="favicon.ico" />
-
-  </head>
   <body>
   <div id="wrap">
     <div class="banner">
@@ -60,7 +25,7 @@
         </h1>
         <aside>
           up.front is a monthly meetup <br/>
-          for webdesigners &amp; frontend developers in Berlin.
+          for the web design community in Berlin.
         </aside>
       </header>
       <div class="content">
@@ -71,106 +36,7 @@
 
     </div>
 
-
-    <!-- footer -->
-    <footer>
-      <a id="contact"></a>
-      <div class="container">
-
-        <h3>Contact</h3>
-
-        <p>
-           Our meetups take place at<br>
-          <a href="http://co-up.de/">co.up Coworking Space</a><br>
-          Adalbertstraße 7<br>
-          10999 Berlin<br>
-          <a href="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Adalbertstra%C3%9Fe+7,+10999+Berlin,+Germany&sll=52.549636,13.666992&sspn=0.901874,1.851196&ie=UTF8&hq=&hnear=Adalbertstra%C3%9Fe+7,+Kreuzberg+10999+Berlin,+Germany&z=16">&raquo; Directions</a>
-        </p>
-
-
-        <br>
-
-        <ul class="social">
-          <li><a href="http://twitter.com/upfront_ug" class="social_twitter">Follow up.front.ug on Twitter</a></li>
-          <li><a href="http://www.facebook.com/pages/Upfront/158502897496288" class="social_fb">We are also on Facebook</a></li>
-          <li class="last"><a href="http://groups.google.com/group/upfront_ug" class="social_mail">Join our Mailinglist</a></li>
-        </ul>
-
-
-        <br>
-
-
-        <div class="like_box">
-          <iframe src="http://www.facebook.com/plugins/like.php?app_id=265825833436844&amp;href=http%3A%2F%2Fup.front.ug%2F&amp;send=false&amp;layout=standard&amp;width=300&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=63" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:63px; margin: 0 auto;" allowTransparency="true" ></iframe>
-        </div>
-
-        <!-- Place this tag where you want the +1 button to render. -->
-        <div class="g-plusone" data-annotation="inline" data-width="295" data-href="//plus.google.com/114106535649642671688"></div>
-
-        <!-- Place this tag after the last +1 button tag. -->
-        <script type="text/javascript">
-          (function() {
-            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-            po.src = 'https://apis.google.com/js/plusone.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-          })();
-        </script>
-
-        <br>
-        <br>
-
-
-        <br>
-
-        <h3 id="team">Meet the Organizers</h3>
-
-        <ul class="team">
-          <li>
-            <div class="team_inner">
-              <h4>Kristina Schneider</h4>
-              <img src="/images/upfront_team_kriesse.jpg" alt="Kristina Schneider">
-              <a href="http://twitter.com/kriesse" title="Kristina Schneider on Twitter">@kriesse</a>
-              <a href="http://www.kristinaschneider.com/" title="Kristina Schneider">kristinaschneider.com</a>
-              <a href="https://plus.google.com/+KristinaSchneider?rel=author">Google+</a>
-            </div>
-          </li>
-          <li>
-            <div class="team_inner">
-              <h4>Max Fellmuth</h4>
-              <img src="/images/upfront_team_max.jpg" alt="Max Fellmuth">
-              <a href="http://twitter.com/maxfell">@maxfell</a>
-              <a href="http://www.maxfellmuth.com/" title="Max Fellmuth">maxfellmuth.com</a>
-              <a href="https://plus.google.com/103108378665304707430?rel=author">Google+</a>
-            </div>
-          </li>
-          <li>
-            <div class="team_inner">
-              <h4>Katharina Jockenhöfer</h4>
-              <img src="/images/upfront_team_katha.jpg" alt="Katharina Jockenhöfer">
-              <a href="http://twitter.com/Qate_Oh">@qate_oh</a>
-              <a href="https://plus.google.com/101815480422998369957?rel=author">Google+</a>
-            </div>
-          </li>
-          <li>
-            <div class="team_inner">
-              <h4>Alex Feyerke</h4>
-              <img src="/images/upfront_team_alex.png" alt="Alex Feyerke">
-              <a href="http://twitter.com/espylaub" title="Alex Feyerke on Twitter">@espylaub</a>
-              <a href="https://plus.google.com/106091272605438923361?rel=author">Google+</a>
-            </div>
-          </li>
-        </ul>
-
-        <h3>Code of Conduct</h3>
-
-        <p>
-          If you are attending, organizing or speaking at our event, you are required to agree with our <a href="codeofconduct.html">Code of Conduct</a>. If you encounter or observe any behaviour that is not in line with the Code of Conduct, please contact one of our team members by talking to us directly or tweeting to us at <a href="https://twitter.com/upfront_ug">@upfront_ug</a> or at our personal twitter accounts. – <a href="http://twitter.com/Qate_Oh">Katha</a>, <a href="http://twitter.com/espylaub" title="Alex Feyerke on Twitter">Alex</a>, <a href="http://twitter.com/maxfell">Max</a>, <a href="http://twitter.com/kriesse" title="Kristina Schneider on Twitter">Kristina</a>.
-        </p>
-
-
-      </div>
-    </footer>
-
+    {% include footer.html %}
 
    </div>
 
