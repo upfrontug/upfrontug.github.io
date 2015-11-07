@@ -1,0 +1,62 @@
+<header class="title">
+  {% if post.meetup %}
+    <a href="{{post.meetup}}" class="btn btn--rsvp">RSVP</a>
+  {% endif %}
+  <span class="title__count">
+    #{{post.count}}
+  </span>
+  <span class="title__date">
+    {{post.date | date:'%a, %b %d'}}
+    <br>
+    {{post.time}}
+  </span>
+</header>
+<div class="post__content">
+  {% if post.intro%}
+    <p>
+      {{post.intro}}
+    </p>
+  {% endif %}
+
+  {% if post.talks %}
+  <ul class="talk-list">
+    {% for talk in post.talks %}
+    <li class="talk">
+      <div class="talk__header">
+        <div class="media media--center media--full">
+           <div class="media__figure">
+             <div class="talk__header__media">
+               {% if talk.picture %}
+                 <img src="/images/talks/{{talk.picture}}" alt="No Picture available" class="talk__picture">
+               {% else %}
+                 <img src="/images/talks/placeholder.png" alt="Picture of {{talk.name}}" class="talk__picture">
+               {% endif %}
+             </div>
+           </div>
+           <div class="media__body">
+             <h4 class="talk__header__text">
+               <span class="talk__name">{{talk.name}}</span>
+               <span class="talk__title">{{talk.title}}</span>
+             </h4>
+           </div>
+        </div>
+      </div>
+      <p>
+        {{talk.desc}}
+      </p>
+      <p class="talk__bio">
+        {{talk.bio}}
+      </p>
+      <ul class="talk__links">
+        {% for link in talk.links %}
+          <li><a href="{{link.url}}">{{link.title}}</a></li>
+        {% endfor %}
+      </ul>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {{ post.content }}
+
+</div>

@@ -1,0 +1,78 @@
+// media object
+
+/**
+ * Media Block:
+ *
+ *     @example
+ *     <div class="media">
+ *        <div class="media__figure">
+ *          <img src="http://placekitten.com.s3.amazonaws.com/homepage-samples/200/139.jpg" alt="Placeholder picture">
+ *        </div>
+ *       <p class="media__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et lit anim id est laborum.</p>
+ *     </div>
+ *
+*/
+
+.media {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.media__figure {
+  padding: 0 1.5em 0 0;
+  flex: 1 0 1;
+}
+
+.media__body {
+  flex: 1;
+}
+
+
+/**
+ * Media Block Center:
+ * `.media--center` Vertically centers text with figure
+ *
+ *     @example
+ *     <div class="media media--center">
+ *        <div class="media__figure">
+ *          <img src="http://placekitten.com.s3.amazonaws.com/homepage-samples/200/139.jpg" alt="Placeholder picture">
+ *        </div>
+ *        <p class="media__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et lit anim id est laborum.</p>
+ *     </div>
+ *
+*/
+
+.media--center {
+  align-items: center;
+}
+
+/**
+ * Media Block only after a tablet width:
+ * `.media--full`
+ *
+ *     @example
+ *     <div class="media media--full">
+ *        <div class="media__figure">
+ *          <img src="http://placekitten.com.s3.amazonaws.com/homepage-samples/200/139.jpg" alt="Placeholder picture">
+ *        </div>
+ *       <p class="media__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et lit anim id est laborum.</p>
+ *     </div>
+ *
+*/
+
+@media screen and (max-width: 500px) {
+  .media--full {
+    justify-content: center;
+    > .media__body,
+    > .media__figure {
+      flex: 0 0 100%;
+    }
+    > .media__figure {
+      padding-right: 0;
+      padding-left: 0;
+      padding-bottom: 1em;
+    }
+  }
+}
+
