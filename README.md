@@ -16,3 +16,6 @@ for webdesigners & frontend developers in Berlin
 #Contributing
 
 If you would like to contribute to our site, please fork the project and then submit a pull request. We appreciate your help and will try to get back to you as soon as possible.
+
+#Run jekyll
+`jekyll serve watch`

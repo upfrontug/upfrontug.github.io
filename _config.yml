@@ -21,4 +21,5 @@ defaults:
     values:
       meetup: 'http://www.meetup.com/up-front-ug'
       time: 8:00pm
+      layout: post
 

@@ -2,14 +2,16 @@
   {% if post.meetup %}
     <a href="{{post.meetup}}" class="btn btn--rsvp">RSVP</a>
   {% endif %}
-  <span class="title__count">
-    #{{post.count}}
-  </span>
-  <span class="title__date">
-    {{post.date | date:'%a, %b %d'}}
-    <br>
-    {{post.time}}
-  </span>
+  <a href="{{ post.url }}">
+    <span class="title__count">
+      #{{post.count}}
+    </span>
+    <span class="title__date">
+      {{post.date | date:'%a, %b %d'}}
+      <br>
+      {{post.time}}
+    </span>
+  </a>
 </header>
 <div class="post__content">
   {% if post.intro%}
