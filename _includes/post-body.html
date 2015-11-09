@@ -1,8 +1,15 @@
 <header class="title">
+
   {% if post.meetup %}
-    <a href="{{post.meetup}}" class="btn btn--rsvp">RSVP</a>
+    {% if forloop.first %}
+      <a href="{{post.meetup}}" class="btn btn--rsvp">RSVP</a>
+    {% else %}
+      <a href="{{post.meetup}}" class="">View on meetup.com</a>
+    {% endif %}
   {% endif %}
-  <a href="{{ post.url }}">
+
+
+  <a href="{{ post.url }}" style="display: block;">
     <span class="title__count">
       #{{post.count}}
     </span>
@@ -61,4 +68,4 @@
 
   {{ post.content }}
 
-</div> 
+</div>

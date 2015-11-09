@@ -3,12 +3,14 @@
 ---
 
 <article>
-  
+
   <header class="title">
     {% if page.meetup %}
-      <a href="{{page.meetup}}" class="btn btn--rsvp">RSVP</a>
+        <a href="{{page.meetup}}" class="btn btn--rsvp">RSVP</a>
+      
     {% endif %}
-    <a href="{{ page.url }}">
+
+
       <span class="title__count">
         #{{page.count}}
       </span>
@@ -17,7 +19,7 @@
         <br>
         {{page.time}}
       </span>
-    </a>
+
   </header>
   <div class="post__content">
     {% if page.intro%}
@@ -68,7 +70,7 @@
     {{ page.content }}
 
   </div>
-  
+
 </article>
 
 
