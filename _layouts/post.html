@@ -6,19 +6,17 @@
 
   <header class="title">
     {% if page.meetup %}
-        <a href="{{page.meetup}}" class="btn btn--rsvp">RSVP</a>
-      
+      <a href="{{page.meetup}}" class="btn btn--rsvp">RSVP</a>
     {% endif %}
 
-
-      <span class="title__count">
-        #{{page.count}}
-      </span>
-      <span class="title__date">
-        {{page.date | date:'%a, %b %d'}}
-        <br>
-        {{page.time}}
-      </span>
+    <span class="title__count">
+      #{{page.count}}
+    </span>
+    <span class="title__date">
+      {{page.date | date:'%a, %b %d'}}
+      <br>
+      {{page.time}}
+    </span>
 
   </header>
   <div class="post__content">

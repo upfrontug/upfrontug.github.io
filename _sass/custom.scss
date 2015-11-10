@@ -1,11 +1,12 @@
 /* typography.css */
-
 .wf-loading {
   h1, h2, h3, h4, h5, ul, p, nav, a, .tagline, header {
     visibility: hidden;
   }
 }
-
+body, input, textarea {
+  font-family: "jaf-facitweb-1","jaf-facitweb-2", "Facit", Verdana, Helvetica, Arial, 'Helvetica Neue';
+}
 
 html {
   font-size: 100.01%;
@@ -20,22 +21,14 @@ body {
   background-color: $grey--light;
 }
 
-body, input, textarea {
-  font-family: "jaf-facitweb-1","jaf-facitweb-2", "Facit", Verdana, Helvetica, Arial, 'Helvetica Neue';
-}
-
 @media screen and (min-width: 700px) {
   body {
     font-size: 100%;
   }
 }
 
-.center {
-  text-align: center;
-}
-
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
+  font-weight: 500;
 }
 
 h1 {
@@ -57,13 +50,11 @@ h3 {
   font-size: 1.25em;
   line-height: 1;
   margin-bottom: 1em;
-  font-weight: 500;
 }
 
 h4 {
   font-size: 1.5em;
   margin-bottom: .75em;
-  font-weight: 500;
   float: left;
   /* For slide download on the right */
   span {
@@ -77,11 +68,10 @@ p {
 
 em, i {
   font-weight: normal;
-  font-style: normal;
   font-style: italic;
 }
 
-// transitions 
+// transitions
 a, button, input {
   -webkit-transition: color 0.2s ease, background-color 0.2s ease;
   -moz-transition: color 0.2s ease, background-color 0.2s ease;
@@ -89,9 +79,7 @@ a, button, input {
 }
 
 
-
-
-/* links */
+// links
 
 a, button, input {
   padding: 0 1px;
@@ -109,6 +97,24 @@ a, button, input {
   text-align: center;
 }
 
+.meetup-link {
+  text-transform: none;
+  font-size: .75em;
+  display: block;
+}
+
+// buttons
+
+.btn {
+  display: inline-block;
+  padding: .5em 2em;
+  background-color: $red;
+  color: #FFF;
+  &:hover, &:active, &:focus {
+    background-color: $blue;
+    color: #FFF;
+  }
+}
 
 // layout
 
@@ -124,6 +130,7 @@ a, button, input {
   font-size: 1.25em;
   margin: 1em 0 2em 0;
 }
+
 .header {
   padding-top: 1em;
   background-color: #FFF;
@@ -136,7 +143,6 @@ a, button, input {
 
 @media screen and (min-width: 700px) {
   .header {
-    //min-height: 15em;
     display: flex;
   }
   .header__logo {
@@ -156,7 +162,6 @@ a, button, input {
   height: auto;
   border-radius: 50%;
   background: $red;
-//  background-image: url('../images/logo-bg-test.png');
   background-position: center;
   background-size: cover;
   .logo-svg {
@@ -170,13 +175,10 @@ a, button, input {
 @media screen and (min-width: 700px) {
   .logo {
     width: 11.5em;
-//    max-width: 500px;
-//    position: absolute;
   }
 }
 
-
-// nav
+// navigation
 nav {
   max-width: 320px;
   margin-left: auto;
@@ -195,6 +197,7 @@ nav {
     }
   }
 }
+
 @media screen and (min-width: 700px) {
   nav {
     margin: 0;
@@ -203,27 +206,6 @@ nav {
         padding-left: 0;
       }
     }
-  }
-}
-//.submit-btn {
-//  border: $border-width solid $red;
-//  color: $red;
-//  margin-left: 10px;
-//  &:hover, &:active, &:focus {
-//    border-color: $blue;
-//    color: $blue;
-//    text-decoration: none;
-//  }
-//}
-
-.btn {
-  display: inline-block;
-  padding: .5em 2em;
-  background-color: $red;
-  color: #FFF;
-  &:hover, &:active, &:focus {
-    background-color: $blue;
-    color: #FFF;
   }
 }
 
@@ -329,8 +311,6 @@ hr {
     padding-left: 3em;
   }
 }
-
-
 
 
 
@@ -493,66 +473,49 @@ ul.two > li.last {
 
 /* team */
 
-.team_cntr {
-  overflow: hidden;
-  .container {
-    margin: 3em auto;
-  }
-}
-
 .team {
   overflow: hidden;
-  padding-top: 0;
   list-style: none;
   text-align: center;
+  font-size: 0.75em;
+  li {
+    width: 50%;
+    margin: 0;
+    float: left;
+  }
   h4 {
     font-size: 1.2em;
-  }
-  li {
-    font-size: 0.75em;
-    margin-right: 3%;
-    float: left;
-    &:nth-child(4n) {
-      margin-right: 0;
-    }
-  }
-  span {
-    font-size: 0.75em;
+    margin-bottom: 0.5em;
+    float: none;
   }
   img {
     display: block;
     width: 100%;
-    max-width: 100px;
+    max-width: 120px;
     height: auto;
     margin: 0 auto 1em;
+  }
+  a {
+    display: block;
   }
 }
 @media screen and (min-width: 700px) {
   .team li {
-    width: 23%;
-    margin-right: 2.6%;
-    &:nth-child(2n) {
-      margin-right: 2.6%;
-    }
-    &:nth-child(4n) {
-     margin-right: 0;
-    }
+    width: 25%;
   }
 }
 
-.team_inner {
+.team__inner {
   display: block;
+  margin: 1em;
   padding: 1em;
   background: rgba(0,0,0,.1);
   color: $red;
   text-decoration: none;
   min-height: 15.5em;
-  h4 {
-    margin-bottom: 0.5em;
-    float: none;
-  }
 }
 
+// footer
 footer {
   border-bottom: 1em solid $red;
   font-size: .875em;
@@ -572,11 +535,6 @@ footer {
 
 .container--footer {
   max-width: 900px;
-}
-
-
-.team a {
-  display: block;
 }
 
 // next events
@@ -643,39 +601,4 @@ footer {
     background-size: 32px auto;
     background-position: bottom;
   }
-}
-
-form fieldset {
-  margin: 0 0 20px 0;
-  font-size: 14px;
-  }
-form fieldset.form-actions {
-  margin: 0;
-  }
-form fieldset label {
-  display: block;
-  margin: 0 0 5px 0;
-  font-weight: bold;
-  }
-form fieldset input.form-text, textarea.form-text {
-  display: block;
-  width: 50%;
-  padding: 5px;
-  font-size: 14px;
-  border: 1px solid #ddd;
-  background: #f5f5f5;
-  box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
-  border-radius: 4px;
-  }
-form fieldset input.form-text:focus, textarea.form-text:focus {
-  border: 1px solid #ccc;
-  background: #fff;
-  }
-form fieldset p.form-help {
-  margin: 5px 0 0 0;
-  font-size: 12px;
-  color: #999;
-  }
-form input[type="submit"] {
-  border: 0;
 }
