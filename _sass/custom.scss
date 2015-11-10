@@ -1,0 +1,617 @@
+/* typography.css */
+.wf-loading {
+  h1, h2, h3, h4, h5, ul, p, nav, a, .tagline, header {
+    visibility: hidden;
+  }
+}
+body, input, textarea {
+  font-family: "jaf-facitweb-1","jaf-facitweb-2", "Facit", Verdana, Helvetica, Arial, 'Helvetica Neue';
+}
+
+html {
+  font-size: 100.01%;
+}
+
+body {
+  font-size: 87.5%;
+  font-weight: 200;
+  line-height: 1.6;
+  letter-spacing: .005em;
+  color: $grey;
+  background-color: $grey--light;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    font-size: 100%;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+h1 {
+  line-height: 1;
+  margin-top: 0.25em;
+  margin-bottom: 1em;
+  font-size: 2.75em;
+  text-transform: uppercase;
+  color: $red;
+}
+
+h2 {
+  font-size: 1.75em;
+  margin-bottom: 0.5em;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 1.25em;
+  line-height: 1;
+  margin-bottom: 1em;
+}
+
+h4 {
+  font-size: 1.5em;
+  margin-bottom: .75em;
+  float: left;
+  /* For slide download on the right */
+  span {
+    display: block;
+  }
+}
+
+p {
+  margin: 0 0 1.5em;
+}
+
+em, i {
+  font-weight: normal;
+  font-style: italic;
+}
+
+// transitions
+a, button, input {
+  -webkit-transition: color 0.2s ease, background-color 0.2s ease;
+  -moz-transition: color 0.2s ease, background-color 0.2s ease;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+
+// links
+
+a, button, input {
+  padding: 0 1px;
+  color: $blue;
+  text-decoration: none;
+  &:hover, &:active, &:focus {
+    color: $red;
+    outline: none;
+  }
+}
+
+.archive-link {
+  padding-top: 2em;
+  padding-bottom: 3em;
+  text-align: center;
+}
+
+.meetup-link {
+  text-transform: none;
+  font-size: .75em;
+  display: block;
+}
+
+// buttons
+
+.btn {
+  display: inline-block;
+  padding: .5em 2em;
+  background-color: $red;
+  color: #FFF;
+  &:hover, &:active, &:focus {
+    background-color: $blue;
+    color: #FFF;
+  }
+}
+
+// layout
+
+.container {
+  width: 95%;
+  max-width: 1100px;
+  margin: 1.5em auto 1.5em auto;
+}
+
+
+// header
+.tagline {
+  font-size: 1.25em;
+  margin: 1em 0 2em 0;
+}
+
+.header {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: #FFF;
+  position: relative;
+  overflow: hidden;
+}
+.header__details {
+  text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+  .header {
+    //display: flex;
+  }
+  .header__logo {
+    float: left;
+  }
+  .header__details {
+    float: right;
+    text-align: left;
+  }
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: 160px;
+  height: auto;
+  border-radius: 50%;
+  background: $red;
+  background-position: center;
+  background-size: cover;
+  .logo-svg {
+    display: block;
+  }
+  &:hover {
+    background: $blue;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .logo {
+    width: 11.5em;
+  }
+}
+
+// navigation
+nav {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content:  space-between;
+      -ms-flex-pack:  space-between;
+          justify-content:  space-between;
+  a {
+    display: inline-block;
+    padding: 0.5em 0.25em .4em;
+    color: $grey--medium;
+    text-transform: uppercase;
+    &:hover, &:active, &:focus {
+      color: $red;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  nav {
+    margin: 0;
+    a {
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+.banner {
+  background-color: $red;
+  color: #FFF;
+  text-align: center;
+  font-size: .75em;
+  padding: .5em;
+}
+
+article {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto 3em;
+  padding: 1em;
+  clear: both;
+  background-color: #FFF;
+}
+
+@media screen and (min-width: 700px) {
+  article {
+    max-width: 960px;
+    padding: 2.75em 2em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  article {
+    padding: 3.25em 5em;
+  }
+}
+
+/* design */
+
+hr {
+  border: $border-width solid $grey--light;
+  margin-bottom: 1em;
+}
+
+/* state changes (special styles for next meetup) */
+
+.title {
+  overflow: hidden;
+  text-transform: uppercase;
+  color: $blue;
+}
+.title__count {
+  font-size: 3.25em;
+  font-weight: 200;
+}
+.title__date {
+  display: inline-block;
+}
+
+.btn--rsvp {
+  float: right;
+  margin-top: 1.5em;
+}
+
+@media screen and (min-width: 700px) {
+  .title {
+    max-width: 24%;
+    margin-bottom: 1.25em;
+    padding-right: 2em;
+    float: left;
+  }
+  .title__count {
+    display: block;
+  }
+  .title__date {
+    display: block;
+  }
+  .btn--rsvp {
+    margin-top: 0;
+    margin-bottom: 1em;
+    float: none;
+  }
+}
+@media screen and (min-width: 900px) {
+  .title {
+    padding-right: 3em;
+  }
+}
+
+.post__content {
+  padding-top: 2em;
+  border-top: $border-width solid $grey--light;
+}
+
+@media screen and (min-width: 700px) {
+  .post__content {
+    padding-top: 0;
+    float: left;
+    max-width: 76%;
+    padding-left: 2em;
+    border-top: none;
+    border-left: $border-width solid $grey--light;
+  }
+}
+@media screen and (min-width: 900px) {
+  .post__content {
+    padding-left: 3em;
+  }
+}
+
+
+
+/* lists */
+
+ul {
+  margin: 0 0 1.5em 0;
+  padding: 1.5em 0 0 0;
+  li {
+    margin: 0 0 1.5em 0;
+    padding: 0;
+  }
+  &.two {
+    overflow: hidden;
+    > li {
+      width: 47%;
+      float: left;
+      margin: 0 5% 1.5em 0;
+    }
+  }
+  li {
+    h4, p {
+      padding: 1px;
+    }
+  }
+}
+
+.talk-list li,
+.talk {
+  list-style: none;
+  margin-bottom: 4.5em;
+  p {
+    clear: both;
+  }
+}
+
+.talk_example {
+  padding: 0.5em;
+  background-color: $grey--light;
+  .talk__links {
+    margin-bottom: 0.5em;
+  }
+}
+
+.small_meetup_print {
+  font-size: .75em;
+  display: none;
+}
+
+.next .small_meetup_print {
+  display: block;
+}
+
+.first {
+  clear: both;
+}
+
+ul.two > li.last {
+  margin-right: 0;
+}
+
+.talk__header {
+  overflow: hidden;
+  margin-bottom: .5em;
+}
+
+.talk__picture {
+  width: 90px;
+}
+
+
+@media screen and (min-width: 700px) {
+  .talk__header__media {
+    //float: left;
+//    width: 22%;
+//    padding-right: 1.5em;
+  }
+  .talk__header__text {
+    //float: left;
+//    width: 78%;
+  }
+}
+
+.talk__name {
+  font-weight: bold;
+  font-size: 1.3333em;
+}
+
+.talk__title {
+}
+
+.talk__bio {
+  font-size: .875em;
+  border-top: $border-width solid $grey--light;
+  padding-top: 0.75em;
+  margin-top:  0.75em;
+  margin-bottom: .5em;
+}
+
+.lightning_talk {
+  margin-bottom: 0;
+}
+
+.talk__links {
+  list-style: none;
+  margin: 0 0 3em 0;
+  padding: 0;
+  clear: both;
+  font-size: 0.75em;
+  overflow: hidden;
+  border-bottom: 0;
+  letter-spacing: 0.025em;
+  li {
+    float: left;
+    margin: 0 1.5em 0 0;
+    list-style: none;
+    a {
+      color: $grey--medium;
+      &:hover, &:active, &:focus {
+        color: $red;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.cancelled {
+  text-decoration: line-through;
+}
+
+.cancelled_hint {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.talk_download {
+  display: block;
+  background: url('../images/slide-icon.png') no-repeat;
+  background-position: bottom;
+  width: 32px;
+  height: 32px;
+  float: right;
+  text-indent: -9999px;
+  white-space: nowrap;
+  margin: 2px;
+  &:hover {
+    background-position: top;
+  }
+}
+
+/* social network links list */
+
+.social {
+  a {
+    display: block;
+    text-decoration: none;
+    border-radius: 2px;
+  }
+}
+
+/* team */
+
+.team {
+  overflow: hidden;
+  list-style: none;
+  text-align: center;
+  font-size: 0.75em;
+  margin-right: -1em;
+  margin-left: -1em;
+  li {
+    width: 50%;
+    margin: 0;
+    float: left;
+  }
+  h4 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    float: none;
+  }
+  img {
+    display: block;
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    margin: 0 auto 1em;
+  }
+  a {
+    display: block;
+  }
+}
+@media screen and (min-width: 700px) {
+  .team li {
+    width: 25%;
+  }
+}
+
+.team__inner {
+  display: block;
+  margin: 1em;
+  padding: 1em;
+  background: rgba(0,0,0,.1);
+  color: $red;
+  text-decoration: none;
+  min-height: 15.5em;
+}
+
+
+// footer
+footer {
+  border-bottom: 1em solid $red;
+  font-size: .875em;
+  background-color: $grey;
+  color: $grey--medium;
+  .container {
+    padding: 3em 0;
+    margin-bottom: 0;
+  }
+  a {
+    color: $grey--light;
+    &:hover, &:active, &:focus {
+      color: $red;
+    }
+  }
+}
+
+.container--footer {
+  max-width: 900px;
+}
+
+// next events
+.list-next-events {
+  color: $grey--medium;
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  li {
+    padding-right: .75em;
+    padding-left: .75em;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      border-right: 0;
+    }
+  }
+  span {
+    font-size: 2em;
+    display: block;
+  }
+}
+
+/* fluid image */
+
+.flex_img {
+  display: block;
+  width: 100%;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* fluid video */
+
+.flex_vid {
+  float: none;
+  clear: both;
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  margin: 2em 0 1em 0;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Hi-res logos */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .talk_download {
+    background: url('../images/slide-icon@2x.png') no-repeat;
+    background-size: 32px auto;
+    background-position: bottom;
+  }
+}
