@@ -478,6 +478,8 @@ ul.two > li.last {
   list-style: none;
   text-align: center;
   font-size: 0.75em;
+  margin-right: -1em;
+  margin-left: -1em;
   li {
     width: 50%;
     margin: 0;
@@ -514,6 +516,7 @@ ul.two > li.last {
   text-decoration: none;
   min-height: 15.5em;
 }
+
 
 // footer
 footer {
