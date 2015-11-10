@@ -133,6 +133,7 @@ a, button, input {
 
 .header {
   padding-top: 1em;
+  padding-bottom: 1em;
   background-color: #FFF;
   position: relative;
   overflow: hidden;
@@ -143,7 +144,7 @@ a, button, input {
 
 @media screen and (min-width: 700px) {
   .header {
-    display: flex;
+    //display: flex;
   }
   .header__logo {
     float: left;
@@ -185,8 +186,14 @@ nav {
   margin-right: auto;
   padding-top: 1em;
   padding-bottom: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: space-between;
+  -webkit-justify-content:  space-between;
+      -ms-flex-pack:  space-between;
+          justify-content:  space-between;
   a {
     display: inline-block;
     padding: 0.5em 0.25em .4em;
@@ -543,8 +550,11 @@ footer {
 // next events
 .list-next-events {
   color: $grey--medium;
-  display: flex;
   list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   li {
     padding-right: .75em;
     padding-left: .75em;
