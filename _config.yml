@@ -13,6 +13,8 @@ facebook_username:  up.front.ug
 
 permalink: pretty
 
+future: true
+
 defaults:
   -
     scope:
