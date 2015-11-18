@@ -2,7 +2,7 @@
 
   {% if post.meetup %}
     {% if forloop.first %}
-      <a href="{{post.meetup}}" class="btn btn--rsvp">RSVP</a>
+      <a href="{{post.meetup}}" class="btn btn--rsvp hide-on-print">RSVP</a>
     {% else %}
       <a href="{{post.meetup}}" class="meetup-link">View on meetup.com</a>
     {% endif %}

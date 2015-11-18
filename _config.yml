@@ -13,6 +13,9 @@ facebook_username:  up.front.ug
 
 permalink: pretty
 
+sass:
+    style: compressed
+
 future: true
 
 defaults:
@@ -23,4 +26,3 @@ defaults:
     values:
       time: 8:00pm
       layout: post
-

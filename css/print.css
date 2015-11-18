@@ -1,0 +1,103 @@
+/* print.css */
+body {
+  line-height: 1.5;
+  font-family: "jaf-facitweb-1","jaf-facitweb-2", "Facit", Verdana, Helvetica, Arial, 'Helvetica Neue', sans-serif;
+  color: #000;
+  background: none;
+  font-size: 10pt;
+  }
+.container {
+  background:none;
+}
+h1, h2, h3, h4 {
+  font-family: "jaf-facitweb-1","jaf-facitweb-2", "Facit", Verdana, Helvetica, Arial, 'Helvetica Neue', sans-serif;
+}
+a:link,
+a:visited {
+  color: #000;
+  background: transparent;
+  text-decoration: underline;
+}
+a:link:after,
+a:visited:after {
+  content:" (" attr(href) ")";
+  font-size: .75em;
+}
+
+nav,
+.header__logo,
+.archive-link,
+.hide-on-print {
+  display: none;
+}
+
+img {
+  max-width: 42pt;
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+li, h3, p {
+  clear: both;
+}
+
+.header {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #000;
+}
+
+footer {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid #000;
+}
+
+.title {
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+.talk-list {
+  list-style: none;
+}
+
+.talk {
+  overflow: hidden;
+  margin-bottom: 2em;
+}
+
+.talk__name, .talk__title {
+  display: block;
+  font-size: 13pt
+}
+
+.small_meetup_print {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid #000;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #000;
+  font-size: .75em;
+}
+
+.team__inner {
+  overflow: hidden;
+}
+
+.team__inner a {
+  display: block;
+}
+
+h1, h2, h3, ul, ol, li, p {
+  margin-bottom: 1em;
+  clear: both;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 1.5em;
+}
