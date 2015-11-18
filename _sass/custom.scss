@@ -481,17 +481,20 @@ ul.two > li.last {
 /* team */
 
 .team {
-  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   list-style: none;
   text-align: center;
   font-size: 0.75em;
-  margin-right: -1em;
-  margin-left: -1em;
-  li {
-    width: 50%;
-    margin: 0;
-    float: left;
-  }
   h4 {
     font-size: 1.2em;
     margin-bottom: 0.5em;
@@ -508,21 +511,24 @@ ul.two > li.last {
     display: block;
   }
 }
-@media screen and (min-width: 700px) {
-  .team li {
-    width: 25%;
-  }
-}
 
 .team__inner {
   display: block;
-  margin: 1em;
   padding: 1em;
   background: rgba(0,0,0,.1);
   color: $red;
   text-decoration: none;
-  min-height: 15.5em;
+  margin-bottom: 1.5em;
+  width: 48.5%;
 }
+
+@media screen and (min-width: 700px) {
+  .team__inner {
+    width: 23%;
+  }
+}
+
+
 
 
 // footer
