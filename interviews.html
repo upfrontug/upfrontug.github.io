@@ -1,0 +1,8 @@
+---
+  layout: default
+---
+{% for interview in site.interviews reversed %}
+  <article class="{{interview.class}}" id="{{interview.date | date:'%m-%d-%Y'}}">
+    {{interview.content}}
+  </article>
+{% endfor %}

@@ -18,11 +18,17 @@ sass:
 
 future: true
 
+collections:
+  events:
+    output: false
+  interviews:
+    output: true
+
 defaults:
   -
     scope:
       path: ""
-      type: posts
+      type: events
     values:
       time: 8:00pm
-      layout: post
+      layout: event
