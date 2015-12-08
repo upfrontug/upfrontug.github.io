@@ -178,11 +178,11 @@ a, button, input {
 
 // navigation
 nav {
-  max-width: 330px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 1em;
-  padding-bottom: 1em;
+//  padding-top: 1em;
+//  padding-bottom: 1em;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -193,7 +193,8 @@ nav {
           justify-content:  space-between;
   a {
     display: inline-block;
-    padding: 0.5em 0.25em .4em;
+    font-size: .8em;
+    padding: 1.5em .5em 1.4em;
     color: $grey--medium;
     text-transform: uppercase;
     &:hover, &:active, &:focus {
@@ -206,6 +207,9 @@ nav {
   nav {
     margin: 0;
     a {
+      font-size: 1em;
+      padding-left: 1em;
+      padding-right: 1em;
       &:first-child {
         padding-left: 0;
       }
