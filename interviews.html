@@ -6,7 +6,7 @@
     <h1>{{interview.title}}</h1>
     {{interview.content}}
     <div class="interview__meta">
-      Interview by {{interview.author}}
+      Interview by <a href="{{interview.author-link}}">{{interview.author}}</a>
     </div>
   </article>
 {% endfor %}
