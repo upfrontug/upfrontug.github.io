@@ -244,12 +244,17 @@ article {
   }
 }
 
+.article--interview {
+  
+}
+
 @media screen and (min-width: 700px) {
   article {
     max-width: 960px;
     padding: 2.75em 2em;
   }
-  .article--page {
+  .article--page,
+  .article--interview {
     padding-right: 5em;
     padding-left: 5em;
   }
@@ -259,6 +264,18 @@ article {
   article {
     padding: 3.25em 5em;
   }
+  .article--page,
+  .article--interview {
+    padding-top: 4.5em;
+    padding-right: 9em;
+    padding-bottom: 4.5em;
+    padding-left: 9em;
+  }
+}
+
+.interview__meta {
+  font-size: .75em;
+  color: $grey--medium;
 }
 
 /* design */

@@ -2,9 +2,11 @@
   layout: default
 ---
 {% for interview in site.interviews reversed %}
-  <article class="interview {{interview.class}}">
+  <article class="article--interview {{interview.class}}">
     <h1>{{interview.title}}</h1>
-    <h4>By {{interview.author}}</h4>
     {{interview.content}}
+    <div class="interview__meta">
+      Interview by {{interview.author}}
+    </div>
   </article>
 {% endfor %}
