@@ -71,6 +71,10 @@ em, i {
   font-style: italic;
 }
 
+strong, b{
+  font-weight: bold;
+}
+
 // transitions
 a, button, input {
   -webkit-transition: color 0.2s ease, background-color 0.2s ease;
@@ -630,5 +634,18 @@ footer {
     background: url('../images/slide-icon@2x.png') no-repeat;
     background-size: 32px auto;
     background-position: bottom;
+  }
+}
+
+/* Interview */
+
+.interview{
+  h1{
+    margin-bottom: 0.25rem;
+  }
+  h4{
+    float: none;
+    font-size: 1.25rem;
+    font-weight: bold;
   }
 }
