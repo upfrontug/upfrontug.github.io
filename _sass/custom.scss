@@ -246,23 +246,33 @@ article {
 
 .article--interview {
   blockquote {
-    color: #FE5048;
-    font-size: 1.5rem;
+    color: $red;
     font-weight: bold;
-    margin: 0 5rem;
-    border-left: 5px solid #FE5048;
+    margin: 0 1rem 1em;
+    border-left: 5px solid $red;
     padding-left: 1rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .article--interview {
-    blockquote{
+    p {
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: 480px) {
       font-size: 1.25rem;
-      margin: 0 1rem;
+      margin-right: 2rem;
+      margin-left: 2rem;
+    }
+    @media screen and (min-width: 700px) {
+      float: right;
+      font-size: 1.25rem;
+      margin: 1em 5rem 1.5em;
+      padding-left: 2rem;
+    }
+    @media screen and (min-width: 900px) {
+      max-width: 40%;
+      margin: 0 -12rem 1.5em 4em;
     }
   }
 }
+
+
 
 @media screen and (min-width: 700px) {
   article {
@@ -280,12 +290,17 @@ article {
   article {
     padding: 3.25em 5em;
   }
-  .article--page,
-  .article--interview {
+  .article--page {
     padding-top: 4.5em;
     padding-right: 9em;
     padding-bottom: 4.5em;
     padding-left: 9em;
+  }
+  .article--interview {
+    padding-top: 4.5em;
+    padding-right: 14em;
+    padding-bottom: 4.5em;
+    padding-left: 4em;
   }
 }
 
@@ -674,5 +689,13 @@ footer {
     background: url('../images/slide-icon@2x.png') no-repeat;
     background-size: 32px auto;
     background-position: bottom;
+  }
+}
+
+/* Interview */
+
+.interview {
+  h1 {
+    margin-bottom: 0.25rem;
   }
 }

@@ -25,6 +25,8 @@ It was only then that I went back and studied Computer Science through Goldsmith
 
 __Can you think of a web project, or an app, or a creative project that recently impressed and inspired you?__
 
+> Here were people with a strong social justice mission, doing fascinating, stylish and compelling web projects
+
 The projects that really blow me away generally combine some sort of journalism or storytelling with really great interactive data visualisations. I remember a couple of years ago when I discovered [The Guardian datablog](http://www.theguardian.com/data), I was just so inspired – here were people with a strong social justice mission, doing really fascinating, stylish and compelling web projects that balanced storytelling and sharing the data and facts
 
 Of course this whole field has blossomed incredibly in the past few years. One brilliant example I saw earlier in the year looked at the overall trends of deaths in wars over the twentieth century. It’s a dark topic but ultimately it carried a hopeful message.
@@ -32,11 +34,13 @@ Another lovely example I saw recently was an [animated web version of Nam Le’s
 
 __Do you remember your first design or front end project? Is it still online?__
 
-> My first freelance gig came about because I literally started telling people at parties I could build them a website.
+My first freelance gig came about because I literally started telling people at parties I could build them a website.
 
 I had chewed through most of my savings and was pretty stressed about getting a work visa once my work and travel one ran out.
 
 Karra Duchi is an American cellist who’d also just moved to Berlin – I made a website to promote her as a performer and a teacher. I must have spent hours upon hours working on it, and earned about €200. But it was an important step for my portfolio and for my self-confidence, and Karra wrote a lovely referral letter for the Ausländerbehörde!
+
+> My first freelance gig came about because I literally started telling people at parties I could build them a website.
 
 The website is very much a product of its time (circa 2010). I think I threw every design trope of the era at it – overlaid partly transparent images (thanks to no more IE6!), real world textures, large background images, and of course it was well before the days of subtlepatterns.com, Google fonts, or me being able to afford decent illustration assets! And all hacked together in a Wordpress theme.
 
