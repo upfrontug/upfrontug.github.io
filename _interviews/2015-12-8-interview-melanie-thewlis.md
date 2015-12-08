@@ -6,6 +6,7 @@ description:      'Interview with Melanie Thewlis'
 keywords:         Melanie, Thewlis, up.front, Berlin, web developer, freelance
 excerpt:          'Melanie is a co-founder and lead web developer at Little Web Giants, and is experienced in building all sorts of web projects, from e-commerce to CRM integrations to data visualisations. She is an active member of the Berlin tech community, speaker, front end web development teacher, and holds degrees in Creative Computing in Political Science from the University of Melbourne. Melanie has had a lifelong involvement with volunteer and activist work on issues of social justice and the environment.'
 author:           'Katharina Jockenhöfer'
+author-link:      'https://twitter.com/qate_oh'
 ---
 
 Melanie is a co-founder and lead web developer at Little Web Giants, where she builds all sorts of web projects, from e-commerce to CRM integrations to data visualisations. She also is an active member of the Berlin tech community, speaker, front end web development teacher, and holds degrees in Creative Computing in Political Science from the University of Melbourne. Melanie has had a lifelong involvement with volunteer and activist work on issues of social justice and the environment. You can follow her on [@littlewebgiants](http://twitter.com/littlewebgiants), or read more about her company on their website [littlewebgiants.com](http://littlewebgiants.com).
