@@ -4,26 +4,24 @@
 
 <a id="events"></a>
 
-  {% for post in site.posts limit:1 %}
-    <article class="{{post.class}}" id="{{post.date | date:'%m-%d-%Y'}}">
-      {% include post-body.html %}
+  {% assign event = site.events.last %}
+  <article class="{{event.class}}" id="{{event.date | date:'%m-%d-%Y'}}">
+    {% include event-body.html %}
 
-      <div class="small_meetup_print">
-        <p>
-          Up.front is a free event, and you do not have to register anywhere. However it gets packed sometimes. Doors open at 7:30pm, talks start at {{post.time}}. Arrive on time to make sure you get a seat! After the talks there’s time for conversations with tasty drinks or snacks at <a href="http://www.kremanski.de/">Kremanski</a>, a cosy coffeeshop and bistro just around the corner from our venue.
-        <br>
-           We always need volunteers who help us to prepare the venue (and build it back after the meetups). This takes ca. 15 minutes and is fun – arrive at 7pm if you want to help us.
-        </p>
-        <p>
-          <i>Accessibility</i>: If you would like to use the elevator, please tweet <a href="http://twitter.com/upfront_ug/">@upfront_ug</a> when you arrive.
-        </p>
-        <p>
-          You are required to follow our <a href="/code-of-conduct/">code of conduct</a>.
-        </p>
-      </div>
-
-    </article>
-  {% endfor %}
+    <div class="small_meetup_print">
+      <p>
+        Up.front is a free event, and you do not have to register anywhere. However it gets packed sometimes. Doors open at 7:30pm, talks start at {{event.time}}. Arrive on time to make sure you get a seat! After the talks there’s time for conversations with tasty drinks or snacks at <a href="http://www.kremanski.de/">Kremanski</a>, a cosy coffeeshop and bistro just around the corner from our venue.
+      <br>
+         We always need volunteers who help us to prepare the venue (and build it back after the meetups). This takes ca. 15 minutes and is fun – arrive at 7pm if you want to help us.
+      </p>
+      <p>
+        <i>Accessibility</i>: If you would like to use the elevator, please tweet <a href="http://twitter.com/upfront_ug/">@upfront_ug</a> when you arrive.
+      </p>
+      <p>
+        You are required to follow our <a href="/code-of-conduct/">code of conduct</a>.
+      </p>
+    </div>
+  </article>
 
   <p class="archive-link hide-on-print">
     <a href="/archive/">&raquo; See archive</a> for all previous events.

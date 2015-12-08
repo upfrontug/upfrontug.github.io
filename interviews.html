@@ -1,0 +1,17 @@
+---
+  layout: default
+---
+
+<div class="page__intro">
+  Our up.front interview series asks our speakers about their work, their life in Berlin, and what brought them to where they are today. 
+</div>
+
+{% for interview in site.interviews reversed %}
+  <article class="article--interview {{interview.class}}">
+    <h1>{{interview.title}}</h1>
+    {{interview.content}}
+    <div class="interview__meta">
+      Interview by <a href="{{interview.author-link}}">{{interview.author}}</a>
+    </div>
+  </article>
+{% endfor %}

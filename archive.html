@@ -3,15 +3,12 @@
 ---
 
 
-{% for post in site.posts %}
-  <article class="{{post.class}}" id="{{post.date | date:'%m-%d-%Y'}}">
-    {% include post-body.html %}
+{% for event in site.events reversed %}
+  <article class="{{event.class}}" id="{{event.date | date:'%m-%d-%Y'}}">
+    {% include event-body.html %}
   </article>
 {% endfor %}
 
 
 <!-- TO DO: Move to new format -->
 <!-- OLD meetups that have not yet been saved in separate posts -->
-
-
-

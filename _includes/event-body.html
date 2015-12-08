@@ -1,35 +1,35 @@
 <header class="title">
 
-  {% if post.meetup %}
+  {% if event.meetup %}
     {% if forloop.first %}
-      <a href="{{post.meetup}}" class="btn btn--rsvp hide-on-print">RSVP</a>
+      <a href="{{event.meetup}}" class="btn btn--rsvp hide-on-print">RSVP</a>
     {% else %}
-      <a href="{{post.meetup}}" class="meetup-link">View on meetup.com</a>
+      <a href="{{event.meetup}}" class="meetup-link">View on meetup.com</a>
     {% endif %}
   {% endif %}
 
 
-  <a href="{{ post.url }}" style="display: block;">
+  <a href="{{ event.url }}" style="display: block;">
     <span class="title__count">
-      #{{post.count}}
+      #{{event.count}}
     </span>
     <span class="title__date">
-      {{post.date | date:'%a, %b %d %Y'}}
+      {{event.date | date:'%a, %b %d %Y'}}
       <br>
-      {{post.time}}
+      {{event.time}}
     </span>
   </a>
 </header>
-<div class="post__content">
-  {% if post.intro%}
+<div class="event__content">
+  {% if event.intro%}
     <p>
-      {{post.intro}}
+      {{event.intro}}
     </p>
   {% endif %}
 
-  {% if post.talks %}
+  {% if event.talks %}
   <ul class="talk-list">
-    {% for talk in post.talks %}
+    {% for talk in event.talks %}
     <li class="talk">
       <div class="talk__header">
         <div class="media media--center media--full">
@@ -66,6 +66,6 @@
   </ul>
   {% endif %}
 
-  {{ post.content }}
+  {{ event.content }}
 
 </div>

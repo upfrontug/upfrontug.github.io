@@ -71,6 +71,10 @@ em, i {
   font-style: italic;
 }
 
+strong, b{
+  font-weight: bold;
+}
+
 // transitions
 a, button, input {
   -webkit-transition: color 0.2s ease, background-color 0.2s ease;
@@ -178,11 +182,11 @@ a, button, input {
 
 // navigation
 nav {
-  max-width: 320px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 1em;
-  padding-bottom: 1em;
+//  padding-top: 1em;
+//  padding-bottom: 1em;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -193,7 +197,8 @@ nav {
           justify-content:  space-between;
   a {
     display: inline-block;
-    padding: 0.5em 0.25em .4em;
+    font-size: .8em;
+    padding: 1.5em .5em 1.4em;
     color: $grey--medium;
     text-transform: uppercase;
     &:hover, &:active, &:focus {
@@ -206,6 +211,9 @@ nav {
   nav {
     margin: 0;
     a {
+      font-size: 1em;
+      padding-left: 1em;
+      padding-right: 1em;
       &:first-child {
         padding-left: 0;
       }
@@ -236,12 +244,43 @@ article {
   }
 }
 
+.article--interview {
+  blockquote {
+    color: $red;
+    font-weight: bold;
+    margin: 0 1rem 1em;
+    border-left: 5px solid $red;
+    padding-left: 1rem;
+    p {
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: 480px) {
+      font-size: 1.25rem;
+      margin-right: 2rem;
+      margin-left: 2rem;
+    }
+    @media screen and (min-width: 700px) {
+      float: right;
+      font-size: 1.25rem;
+      margin: 1em 5rem 1.5em;
+      padding-left: 2rem;
+    }
+    @media screen and (min-width: 900px) {
+      max-width: 40%;
+      margin: 0 -12rem 1.5em 4em;
+    }
+  }
+}
+
+
+
 @media screen and (min-width: 700px) {
   article {
     max-width: 960px;
     padding: 2.75em 2em;
   }
-  .article--page {
+  .article--page,
+  .article--interview {
     padding-right: 5em;
     padding-left: 5em;
   }
@@ -251,6 +290,30 @@ article {
   article {
     padding: 3.25em 5em;
   }
+  .article--page {
+    padding-top: 4.5em;
+    padding-right: 9em;
+    padding-bottom: 4.5em;
+    padding-left: 9em;
+  }
+  .article--interview {
+    padding-top: 4.5em;
+    padding-right: 14em;
+    padding-bottom: 4.5em;
+    padding-left: 4em;
+  }
+}
+
+.page__intro {
+  margin: 0 auto;
+  padding: 3em 1em 4.5em;
+  text-align: center;
+  max-width: 580px;
+}
+
+.interview__meta {
+  font-size: .75em;
+  color: $grey--medium;
 }
 
 /* design */
@@ -305,13 +368,13 @@ hr {
   }
 }
 
-.post__content {
+.event {
   padding-top: 2em;
   border-top: $border-width solid $grey--light;
 }
 
 @media screen and (min-width: 700px) {
-  .post__content {
+  .event__content {
     padding-top: 0;
     float: left;
     max-width: 76%;
@@ -321,7 +384,7 @@ hr {
   }
 }
 @media screen and (min-width: 900px) {
-  .post__content {
+  .event__content {
     padding-left: 3em;
   }
 }
@@ -626,5 +689,13 @@ footer {
     background: url('../images/slide-icon@2x.png') no-repeat;
     background-size: 32px auto;
     background-position: bottom;
+  }
+}
+
+/* Interview */
+
+.interview {
+  h1 {
+    margin-bottom: 0.25rem;
   }
 }
