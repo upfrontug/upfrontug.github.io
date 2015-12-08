@@ -25,14 +25,16 @@ It was only then that I went back and studied Computer Science through Goldsmith
 
 __Can you think of a web project, or an app, or a creative project that recently impressed and inspired you?__
 
-The projects that really blow me away generally combine some sort of journalism or storytelling with really great interactive data visualisations. I remember a couple of years ago when I discovered [The Guardian datablog](http://www.theguardian.com/data), I was just so inspired – here were people with a strong social justice mission, doing really fascinating, stylish and compelling web projects that balanced storytelling and sharing the data and facts.
+The projects that really blow me away generally combine some sort of journalism or storytelling with really great interactive data visualisations. I remember a couple of years ago when I discovered [The Guardian datablog](http://www.theguardian.com/data), I was just so inspired – here were people with a strong social justice mission, doing really fascinating, stylish and compelling web projects that balanced storytelling and sharing the data and facts
 
 Of course this whole field has blossomed incredibly in the past few years. One brilliant example I saw earlier in the year looked at the overall trends of deaths in wars over the twentieth century. It’s a dark topic but ultimately it carried a hopeful message.
 Another lovely example I saw recently was an [animated web version of Nam Le’s beautiful short story The Boat](http://www.sbs.com.au/theboat/), which tells the story of a group of Vietnamese refugees struggling to reach Australia.
 
 __Do you remember your first design or front end project? Is it still online?__
 
-My first freelance gig came about because I literally started telling people at parties I could build them a website. I had chewed through most of my savings and was pretty stressed about getting a work visa once my work and travel one ran out.
+> My first freelance gig came about because I literally started telling people at parties I could build them a website.
+
+I had chewed through most of my savings and was pretty stressed about getting a work visa once my work and travel one ran out.
 
 Karra Duchi is an American cellist who’d also just moved to Berlin – I made a website to promote her as a performer and a teacher. I must have spent hours upon hours working on it, and earned about €200. But it was an important step for my portfolio and for my self-confidence, and Karra wrote a lovely referral letter for the Ausländerbehörde!
 
@@ -50,6 +52,8 @@ Of course I also really enjoy the social aspects, it’s a great way to meet new
 __What are your best practices to learn something new?__
 
 I’ve never really been one for starting with the theory. Usually I have either a brief from a client or an idea I want to realize for myself. So I like to dive into a big or challenging project and just have a go. Generally I’ll make use of a lot of copy and paste, tweaking other people’s example code, things like that.
+
+> I like to dive into a big or challenging project and just have a go
 
 Once I’ve got my hands dirty for a bit, I might go back and read some more higher level theory. For example, I’ve done a fair bit of work this year building games or interactive installations of different kinds. One of the big challenges in building games is managing state – am I in a menu screen or in gameplay right now? If gameplay, which level am I in? I found that there were really well established design patterns to solve these problems – regardless of whether you are programming in Javascript or C or whatever.
 
