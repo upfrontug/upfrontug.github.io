@@ -273,6 +273,13 @@ article {
   }
 }
 
+.page__intro {
+  margin: 0 auto;
+  padding: 3em 1em 4.5em;
+  text-align: center;
+  max-width: 580px;
+}
+
 .interview__meta {
   font-size: .75em;
   color: $grey--medium;
