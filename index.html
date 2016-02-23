@@ -4,7 +4,7 @@
 
 <a id="events"></a>
 
-  {% for post in site.posts limit:1 %}
+  {% for post in site.posts limit:2 %}
     <article class="{{post.class}}" id="{{post.date | date:'%m-%d-%Y'}}">
       {% include post-body.html %}
 
