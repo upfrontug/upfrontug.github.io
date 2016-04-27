@@ -1,4 +1,4 @@
-#up.front.ug
+# up.front.ug
 
 up.front is a monthly meetup
 for webdesigners & frontend developers in Berlin
@@ -13,9 +13,14 @@ for webdesigners & frontend developers in Berlin
 
 ---
 
-#Contributing
+# Contributing
 
 If you would like to contribute to our site, please fork the project and then submit a pull request. We appreciate your help and will try to get back to you as soon as possible.
 
-#Run jekyll
-`jekyll serve watch`
+# Run jekyll
+
+`$ jekyll serve watch`
+
+If you want to open the site from an external device on your local network, run jekyll with:
+
+`$ jekyll serve --host 0.0.0.0`
