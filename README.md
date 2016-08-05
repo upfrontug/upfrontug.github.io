@@ -24,3 +24,11 @@ If you would like to contribute to our site, please fork the project and then su
 If you want to open the site from an external device on your local network, run jekyll with:
 
 `$ jekyll serve --host 0.0.0.0`
+
+# Page build failure
+
+If you receive a generic page build failure, try rebuilding by pushing an empty commit:
+
+`$ git commit -m 'rebuild pages' --allow-empty`
+
+`$ git push`
