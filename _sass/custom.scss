@@ -66,6 +66,10 @@ p {
   margin: 0 0 1.5em;
 }
 
+strong {
+  font-weight: bold;
+}
+
 em, i {
   font-weight: normal;
   font-style: italic;
@@ -178,7 +182,7 @@ a, button, input {
 
 // navigation
 nav {
-  max-width: 320px;
+  max-width: 420px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 1em;
@@ -334,7 +338,7 @@ ul {
   margin: 0 0 1.5em 0;
   padding: 1.5em 0 0 0;
   li {
-    margin: 0 0 1.5em 0;
+    margin: 0 0 1em 0;
     padding: 0;
   }
   &.two {
