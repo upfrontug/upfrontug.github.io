@@ -25,6 +25,8 @@ If you want to open the site from an external device on your local network, run 
 
 `$ jekyll serve --host 0.0.0.0`
 
+If Ruby complains about a `Gem::LoadError`, try putting `bundle exec` in front of the command you’re trying to run: `$ bundle exec jekyll serve watch`, for example.
+
 # Page build failure
 
 If you receive a generic page build failure, try rebuilding by pushing an empty commit:
