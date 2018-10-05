@@ -24,5 +24,5 @@ defaults:
       path: ""
       type: posts
     values:
-      time: 8:00pm
+      time: 7:45pm
       layout: post
