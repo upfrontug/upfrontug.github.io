@@ -4,7 +4,7 @@ up.front is a monthly meetup
 for webdesigners & frontend developers in Berlin
 
 * **Website**: (under construction)
-* **Twitter**: http://twitter.com/upfront_ug
+* **Twitter**: https://twitter.com/upfront_ug
 
 ---
 
@@ -19,13 +19,12 @@ If you would like to contribute to our site, please fork the project and then su
 
 # Run jekyll
 
-`$ jekyll serve watch`
+`$ bundle exec jekyll serve`
 
 If you want to open the site from an external device on your local network, run jekyll with:
 
 `$ jekyll serve --host 0.0.0.0`
 
-If Ruby complains about a `Gem::LoadError`, try putting `bundle exec` in front of the command you’re trying to run: `$ bundle exec jekyll serve watch`, for example.
 
 # Page build failure
 
