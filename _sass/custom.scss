@@ -53,7 +53,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5em;
+  font-size: 1.25em;
   margin-bottom: .75em;
   float: left;
   /* For slide download on the right */
@@ -77,9 +77,7 @@ em, i {
 
 // transitions
 a, button, input {
-  -webkit-transition: color 0.2s ease, background-color 0.2s ease;
-  -moz-transition: color 0.2s ease, background-color 0.2s ease;
-  transition: color 0.2s ease, background-color 0.2s ease;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
 }
 
 
@@ -123,16 +121,18 @@ a, button, input {
 // layout
 
 .container {
-  width: 95%;
-  max-width: 1100px;
-  margin: 1.5em auto 1.5em auto;
+  width: 100%;
+  max-width: 980px;
+  margin: 1.5rem auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 
 // header
 .tagline {
   font-size: 1.25em;
-  margin: 1em 0 2em 0;
+  font-weight: bold;
 }
 
 .header {
@@ -143,16 +143,24 @@ a, button, input {
   overflow: hidden;
 }
 .header__details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   text-align: center;
 }
 
-@media screen and (min-width: 700px) {
-  .header__logo {
-    float: left;
-  }
-  .header__details {
-    float: right;
-    text-align: left;
+.header__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  @media screen and (min-width: 700px) {
+    flex-direction: row;
+    .header__details {
+      text-align: left;
+      margin-left: auto;
+      gap: 3rem;
+    }
   }
 }
 
@@ -160,7 +168,8 @@ a, button, input {
   display: block;
   margin: 0 auto;
   padding: 0;
-  width: 160px;
+  width: 6rem;
+  height: 6rem;
   height: auto;
   border-radius: 50%;
   background: $red;
@@ -169,38 +178,30 @@ a, button, input {
   .logo-svg {
     display: block;
   }
-  &:hover {
+  &:hover, &:focus {
     background: $blue;
+  }
+  @media screen and (min-width: 700px) {
+    width: 9rem;
+    height: 9rem;
   }
 }
 
-@media screen and (min-width: 700px) {
-  .logo {
-    width: 11.5em;
-  }
-}
 
 // navigation
 nav {
   max-width: 420px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-between;
-  -webkit-justify-content:  space-between;
-      -ms-flex-pack:  space-between;
-          justify-content:  space-between;
+  gap: 1rem;
+  justify-content: space-between;
   a {
-    display: inline-block;
-    padding: 0.5em 0.25em .4em;
-    color: $grey--medium;
+    display: block;
+    padding: 0.5em 0.25em;
+    color: $grey;
     text-transform: uppercase;
-    &:hover, &:active, &:focus {
+    &:hover, &:focus {
       color: $red;
     }
   }
@@ -225,11 +226,12 @@ nav {
   padding: .5em;
 }
 
+
 article {
   overflow: hidden;
   position: relative;
-  margin: 0 auto 3em;
-  padding: 1em;
+  margin: 0 auto 3rem;
+  padding: 2rem;
   clear: both;
   background-color: #FFF;
 }
@@ -242,12 +244,10 @@ article {
 
 @media screen and (min-width: 700px) {
   article {
-    max-width: 960px;
-    padding: 2.75em 2em;
+    padding: 2.5em;
   }
   .article--page {
-    padding-right: 5em;
-    padding-left: 5em;
+    padding: 3.5em 7.5em;
   }
 }
 
@@ -269,7 +269,6 @@ hr {
 .title {
   overflow: hidden;
   text-transform: uppercase;
-  color: $blue;
 }
 .title__count {
   font-size: 3.25em;
@@ -391,33 +390,34 @@ ul.two > li.last {
 }
 
 .talk__header {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
   overflow: hidden;
-  margin-bottom: .5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  @media screen and (min-width: 500px) {
+    flex-direction: row;
+    gap: 1.5em;
+  }
+}
+
+.talk__header__media {
+  flex-shrink: 0;
+}
+
+
+.talk__header__text {
+  margin-bottom: 0;
 }
 
 .talk__picture {
   width: 90px;
 }
 
-
-@media screen and (min-width: 700px) {
-  .talk__header__media {
-    //float: left;
-//    width: 22%;
-//    padding-right: 1.5em;
-  }
-  .talk__header__text {
-    //float: left;
-//    width: 78%;
-  }
-}
-
 .talk__name {
   font-weight: bold;
   font-size: 1.3333em;
-}
-
-.talk__title {
 }
 
 .talk__bio {
@@ -492,17 +492,10 @@ ul.two > li.last {
 /* team */
 
 .team {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
   list-style: none;
   text-align: center;
   font-size: 0.75em;
@@ -524,53 +517,37 @@ ul.two > li.last {
 }
 
 .team__inner {
+  flex-grow: 1;
   display: block;
+  margin: 0;
   padding: 1em;
-  background: rgba(0,0,0,.1);
-  color: $red;
+  background: rgba(0,0,0,.25);
   text-decoration: none;
-  margin-bottom: 1.5em;
-  width: 48.5%;
 }
-
-@media screen and (min-width: 700px) {
-  .team__inner {
-    width: 23%;
-  }
-}
-
-
-
 
 // footer
 footer {
   border-bottom: 1em solid $red;
   font-size: .875em;
   background-color: $grey;
-  color: $grey--medium;
-  .container {
-    padding: 3em 0;
-    margin-bottom: 0;
-  }
+  color: $grey--light;
   a {
-    color: $grey--light;
+    color: $blue--light;
     &:hover, &:active, &:focus {
-      color: $red;
+      color: $red--light;
     }
   }
 }
 
-.container--footer {
-  max-width: 900px;
+.footer__separator {
+  opacity: .25;
+  padding: 0 .5rem;
 }
 
 // next events
 .list-next-events {
-  color: $grey--medium;
+  color: $grey;
   list-style: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   li {
     padding-right: .75em;

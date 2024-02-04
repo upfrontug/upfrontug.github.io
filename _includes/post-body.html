@@ -32,23 +32,17 @@
     {% for talk in post.talks %}
     <li class="talk">
       <div class="talk__header">
-        <div class="media media--center media--full">
-           <div class="media__figure">
-             <div class="talk__header__media">
-               {% if talk.picture %}
-                 <img src="/images/talks/{{talk.picture}}" alt="No Picture available" class="talk__picture">
-               {% else %}
-                 <img src="/images/talks/placeholder.png" alt="Picture of {{talk.name}}" class="talk__picture">
-               {% endif %}
-             </div>
-           </div>
-           <div class="media__body">
-             <h4 class="talk__header__text">
-               <span class="talk__name">{{talk.name}}</span>
-               <span class="talk__title">{{talk.title}}</span>
-             </h4>
-           </div>
+        <div class="talk__header__media">
+          {% if talk.picture %}
+            <img src="/images/talks/{{talk.picture}}" alt="No Picture available" class="talk__picture" width="90" height="90">
+          {% else %}
+            <img src="/images/talks/placeholder.png" alt="Picture of {{talk.name}}" class="talk__picture" width="90" height="90">
+          {% endif %}
         </div>
+        <h4 class="talk__header__text">
+          <span class="talk__name">{{talk.name}}</span>
+          <span class="talk__title">{{talk.title}}</span>
+        </h4>
       </div>
       <p>
         {{talk.desc}}
