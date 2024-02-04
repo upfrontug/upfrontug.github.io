@@ -3,7 +3,7 @@ This is up.front.ug
 
 We are a meetup for the web design and front end community in Berlin.
 Every second Tuesday of the month at co.up Coworking Space in Kreuzberg.
-Talk to us at @upfront_ug and team@upfront.ug
+Talk to us at @upfront_ug.
 
 icbm: 52.500188,13.41936
 
@@ -25,4 +25,4 @@ Contributors to this website:
 - Katharina Jockenhöfer, @qate_oh
 
 Thanks to everyone who has supported us over the years, especially:
-Thilo, Alex and Aleks from co.up Coworking, Robin, Jan, Hannes, Christoph, Karl, Jens, and the Republic of Uganda for their TLD (Asante!)
+Thilo, Alex, Aleks and Claire from co.up Coworking, Robin, Jan, Hannes, Christoph, Karl, Jens.
