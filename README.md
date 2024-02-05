@@ -3,7 +3,7 @@
 up.front is a monthly meetup
 for webdesigners & frontend developers in Berlin
 
-* **Website**: (under construction)
+* **Website**: https://upfrontug.github.io/
 * **Twitter**: https://twitter.com/upfront_ug
 
 ---
