@@ -17,8 +17,8 @@ body {
   font-weight: 200;
   line-height: 1.6;
   letter-spacing: .005em;
-  color: $grey;
-  background-color: $grey--light;
+  color: var(--grey);
+  background-color: var(--grey--light);
 }
 
 @media screen and (min-width: 700px) {
@@ -37,7 +37,7 @@ h1 {
   margin-bottom: 1em;
   font-size: 2.75em;
   text-transform: uppercase;
-  color: $red;
+  color: var(--red);
 }
 
 h2 {
@@ -85,10 +85,10 @@ a, button, input {
 
 a, button, input {
   padding: 0 1px;
-  color: $blue;
+  color: var(--blue);
   text-decoration: none;
   &:hover, &:active, &:focus {
-    color: $red;
+    color: var(--red);
     outline: none;
   }
 }
@@ -110,10 +110,10 @@ a, button, input {
 .btn {
   display: inline-block;
   padding: .5em 2em;
-  background-color: $red;
+  background-color: var(--red);
   color: #FFF;
   &:hover, &:active, &:focus {
-    background-color: $blue;
+    background-color: var(--blue);
     color: #FFF;
   }
 }
@@ -172,14 +172,14 @@ a, button, input {
   height: 6rem;
   height: auto;
   border-radius: 50%;
-  background: $red;
+  background: var(--red);
   background-position: center;
   background-size: cover;
   .logo-svg {
     display: block;
   }
   &:hover, &:focus {
-    background: $blue;
+    background: var(--blue);
   }
   @media screen and (min-width: 700px) {
     width: 9rem;
@@ -199,10 +199,10 @@ nav {
   a {
     display: block;
     padding: 0.5em 0.25em;
-    color: $grey;
+    color: var(--grey);
     text-transform: uppercase;
     &:hover, &:focus {
-      color: $red;
+      color: var(--red);
     }
   }
 }
@@ -219,7 +219,7 @@ nav {
 }
 
 .banner {
-  background-color: $red;
+  background-color: var(--red);
   color: #FFF;
   text-align: center;
   font-size: .75em;
@@ -260,7 +260,7 @@ article {
 /* design */
 
 hr {
-  border: $border-width solid $grey--light;
+  border: var(--border-width) solid var(--grey--light);
   margin-bottom: 1em;
 }
 
@@ -310,7 +310,7 @@ hr {
 
 .post__content {
   padding-top: 2em;
-  border-top: $border-width solid $grey--light;
+  border-top: var(--border-width) solid var(--grey--light);
 }
 
 @media screen and (min-width: 700px) {
@@ -320,7 +320,7 @@ hr {
     max-width: 76%;
     padding-left: 2em;
     border-top: none;
-    border-left: $border-width solid $grey--light;
+    border-left: var(--border-width) solid var(--grey--light);
   }
 }
 @media screen and (min-width: 900px) {
@@ -366,7 +366,7 @@ ul {
 
 .talk_example {
   padding: 0.5em;
-  background-color: $grey--light;
+  background-color: var(--grey--light);
   .talk__links {
     margin-bottom: 0.5em;
   }
@@ -422,7 +422,7 @@ ul.two > li.last {
 
 .talk__bio {
   font-size: .875em;
-  border-top: $border-width solid $grey--light;
+  border-top: var(--border-width) solid var(--grey--light);
   padding-top: 0.75em;
   margin-top:  0.75em;
   margin-bottom: .5em;
@@ -446,9 +446,9 @@ ul.two > li.last {
     margin: 0 1.5em 0 0;
     list-style: none;
     a {
-      color: $grey--medium;
+      color: var(--grey--medium);
       &:hover, &:active, &:focus {
-        color: $red;
+        color: var(--red);
         text-decoration: none;
       }
     }
@@ -527,14 +527,14 @@ ul.two > li.last {
 
 // footer
 footer {
-  border-bottom: 1em solid $red;
+  border-bottom: 1em solid var(--red);
   font-size: .875em;
-  background-color: $grey;
-  color: $grey--light;
+  background-color: var(--grey);
+  color: var(--grey--light);
   a {
-    color: $blue--light;
+    color: var(--blue--light);
     &:hover, &:active, &:focus {
-      color: $red--light;
+      color: var(--red--light);
     }
   }
 }
@@ -546,7 +546,7 @@ footer {
 
 // next events
 .list-next-events {
-  color: $grey;
+  color: var(--grey);
   list-style: none;
   display: flex;
   li {
