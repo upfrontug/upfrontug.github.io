@@ -32,9 +32,6 @@ facebook_username:  up.front.ug
 
 permalink: pretty
 
-sass:
-    style: compressed
-
 future: true
 
 defaults:

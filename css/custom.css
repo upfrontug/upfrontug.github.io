@@ -4,8 +4,9 @@
     visibility: hidden;
   }
 }
+
 body, input, textarea {
-  font-family: "jaf-facitweb-1","jaf-facitweb-2", "Facit", Verdana, Helvetica, Arial, 'Helvetica Neue', sans-serif;
+  font-family: "jaf-facitweb-1", "jaf-facitweb-2", "Facit", Verdana, Helvetica, Arial, 'Helvetica Neue', sans-serif;
 }
 
 html {
@@ -56,6 +57,7 @@ h4 {
   font-size: 1.25em;
   margin-bottom: .75em;
   float: left;
+
   /* For slide download on the right */
   span {
     display: block;
@@ -75,18 +77,17 @@ em, i {
   font-style: italic;
 }
 
-// transitions
+/* transitions */
 a, button, input {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
 }
 
-
-// links
-
+/* links */
 a, button, input {
   padding: 0 1px;
   color: var(--blue);
   text-decoration: none;
+
   &:hover, &:active, &:focus {
     color: var(--red);
     outline: none;
@@ -105,21 +106,20 @@ a, button, input {
   display: block;
 }
 
-// buttons
-
+/* buttons */
 .btn {
   display: inline-block;
   padding: .5em 2em;
   background-color: var(--red);
   color: #FFF;
+
   &:hover, &:active, &:focus {
     background-color: var(--blue);
     color: #FFF;
   }
 }
 
-// layout
-
+/* layout */
 .container {
   width: 100%;
   max-width: 980px;
@@ -128,8 +128,7 @@ a, button, input {
   padding-right: 1rem;
 }
 
-
-// header
+/* header */
 .tagline {
   font-size: 1.25em;
   font-weight: bold;
@@ -142,6 +141,7 @@ a, button, input {
   position: relative;
   overflow: hidden;
 }
+
 .header__details {
   display: flex;
   flex-direction: column;
@@ -154,9 +154,11 @@ a, button, input {
   flex-direction: column;
   align-items: center;
   gap: 3rem;
+
   @media screen and (min-width: 700px) {
     flex-direction: row;
-    .header__details {
+
+    & .header__details {
       text-align: left;
       margin-left: auto;
       gap: 3rem;
@@ -175,20 +177,22 @@ a, button, input {
   background: var(--red);
   background-position: center;
   background-size: cover;
-  .logo-svg {
+
+  & .logo-svg {
     display: block;
   }
+
   &:hover, &:focus {
     background: var(--blue);
   }
+
   @media screen and (min-width: 700px) {
     width: 9rem;
     height: 9rem;
   }
 }
 
-
-// navigation
+/* navigation */
 nav {
   max-width: 420px;
   margin-left: auto;
@@ -196,11 +200,13 @@ nav {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
-  a {
+
+  & a {
     display: block;
     padding: 0.5em 0.25em;
     color: var(--grey);
     text-transform: uppercase;
+
     &:hover, &:focus {
       color: var(--red);
     }
@@ -210,10 +216,9 @@ nav {
 @media screen and (min-width: 700px) {
   nav {
     margin: 0;
-    a {
-      &:first-child {
-        padding-left: 0;
-      }
+
+    & a:first-child {
+      padding-left: 0;
     }
   }
 }
@@ -226,7 +231,6 @@ nav {
   padding: .5em;
 }
 
-
 article {
   overflow: hidden;
   position: relative;
@@ -237,7 +241,7 @@ article {
 }
 
 .article--page {
-  ul {
+  & ul {
     padding-left: 1.5em;
   }
 }
@@ -246,6 +250,7 @@ article {
   article {
     padding: 2.5em;
   }
+
   .article--page {
     padding: 3.5em 7.5em;
   }
@@ -258,22 +263,22 @@ article {
 }
 
 /* design */
-
 hr {
   border: var(--border-width) solid var(--grey--light);
   margin-bottom: 1em;
 }
 
 /* state changes (special styles for next meetup) */
-
 .title {
   overflow: hidden;
   text-transform: uppercase;
 }
+
 .title__count {
   font-size: 3.25em;
   font-weight: 200;
 }
+
 .title__date {
   display: inline-block;
 }
@@ -290,18 +295,22 @@ hr {
     padding-right: 2em;
     float: left;
   }
+
   .title__count {
     display: block;
   }
+
   .title__date {
     display: block;
   }
+
   .btn--rsvp {
     margin-top: 0;
     margin-bottom: 1em;
     float: none;
   }
 }
+
 @media screen and (min-width: 900px) {
   .title {
     padding-right: 3em;
@@ -323,33 +332,35 @@ hr {
     border-left: var(--border-width) solid var(--grey--light);
   }
 }
+
 @media screen and (min-width: 900px) {
   .post__content {
     padding-left: 3em;
   }
 }
 
-
-
 /* lists */
-
 ul {
   margin: 0 0 1.5em 0;
   padding: 1.5em 0 0 0;
-  li {
+
+  & li {
     margin: 0 0 1em 0;
     padding: 0;
   }
+
   &.two {
     overflow: hidden;
-    > li {
+
+    & > li {
       width: 47%;
       float: left;
       margin: 0 5% 1.5em 0;
     }
   }
-  li {
-    h4, p {
+
+  & li {
+    & h4, & p {
       padding: 1px;
     }
   }
@@ -359,7 +370,8 @@ ul {
 .talk {
   list-style: none;
   margin-bottom: 4.5em;
-  p {
+
+  & p {
     clear: both;
   }
 }
@@ -367,7 +379,8 @@ ul {
 .talk_example {
   padding: 0.5em;
   background-color: var(--grey--light);
-  .talk__links {
+
+  & .talk__links {
     margin-bottom: 0.5em;
   }
 }
@@ -396,6 +409,7 @@ ul.two > li.last {
   overflow: hidden;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+
   @media screen and (min-width: 500px) {
     flex-direction: row;
     gap: 1.5em;
@@ -405,7 +419,6 @@ ul.two > li.last {
 .talk__header__media {
   flex-shrink: 0;
 }
-
 
 .talk__header__text {
   margin-bottom: 0;
@@ -424,7 +437,7 @@ ul.two > li.last {
   font-size: .875em;
   border-top: var(--border-width) solid var(--grey--light);
   padding-top: 0.75em;
-  margin-top:  0.75em;
+  margin-top: 0.75em;
   margin-bottom: .5em;
 }
 
@@ -441,12 +454,15 @@ ul.two > li.last {
   overflow: hidden;
   border-bottom: 0;
   letter-spacing: 0.025em;
-  li {
+
+  & li {
     float: left;
     margin: 0 1.5em 0 0;
     list-style: none;
-    a {
+
+    & a {
       color: var(--grey--medium);
+
       &:hover, &:active, &:focus {
         color: var(--red);
         text-decoration: none;
@@ -474,15 +490,15 @@ ul.two > li.last {
   text-indent: -9999px;
   white-space: nowrap;
   margin: 2px;
+
   &:hover {
     background-position: top;
   }
 }
 
 /* social network links list */
-
 .social {
-  a {
+  & a {
     display: block;
     text-decoration: none;
     border-radius: 2px;
@@ -490,7 +506,6 @@ ul.two > li.last {
 }
 
 /* team */
-
 .team {
   display: flex;
   flex-wrap: wrap;
@@ -499,19 +514,22 @@ ul.two > li.last {
   list-style: none;
   text-align: center;
   font-size: 0.75em;
-  h4 {
+
+  & h4 {
     font-size: 1.2em;
     margin-bottom: 0.5em;
     float: none;
   }
-  img {
+
+  & img {
     display: block;
     width: 100%;
     max-width: 120px;
     height: auto;
     margin: 0 auto 1em;
   }
-  a {
+
+  & a {
     display: block;
   }
 }
@@ -521,18 +539,20 @@ ul.two > li.last {
   display: block;
   margin: 0;
   padding: 1em;
-  background: rgba(0,0,0,.25);
+  background: rgba(0, 0, 0, .25);
   text-decoration: none;
 }
 
-// footer
+/* footer */
 footer {
   border-bottom: 1em solid var(--red);
   font-size: .875em;
   background-color: var(--grey);
   color: var(--grey--light);
-  a {
+
+  & a {
     color: var(--blue--light);
+
     &:hover, &:active, &:focus {
       color: var(--red--light);
     }
@@ -544,40 +564,43 @@ footer {
   padding: 0 .5rem;
 }
 
-// next events
+/* next events */
 .list-next-events {
   color: var(--grey);
   list-style: none;
   display: flex;
-  li {
+
+  & li {
     padding-right: .75em;
     padding-left: .75em;
+
     &:first-child {
       padding-left: 0;
     }
+
     &:last-child {
       border-right: 0;
     }
   }
-  span {
+
+  & span {
     font-size: 2em;
     display: block;
   }
 }
 
 /* fluid image */
-
 .flex_img {
   display: block;
   width: 100%;
-  img {
+
+  & img {
     width: 100%;
     height: auto;
   }
 }
 
 /* fluid video */
-
 .flex_vid {
   float: none;
   clear: both;
@@ -587,7 +610,8 @@ footer {
   padding-top: 25px;
   height: 0;
   margin: 2em 0 1em 0;
-  iframe {
+
+  & iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -603,6 +627,7 @@ footer {
     max-width: 100%;
     height: auto;
   }
+
   .talk_download {
     background: url('../images/slide-icon@2x.png') no-repeat;
     background-size: 32px auto;
