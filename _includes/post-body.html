@@ -27,38 +27,13 @@
     </p>
   {% endif %}
 
-  {% if post.talks %}
-  <ul class="talk-list">
-    {% for talk in post.talks %}
-    <li class="talk">
-      <div class="talk__header">
-        <div class="talk__header__media">
-          {% if talk.picture %}
-            <img src="/images/talks/{{talk.picture}}" alt="Picture of {{talk.name}}" class="talk__picture" width="90" height="90">
-          {% else %}
-            <img src="/images/talks/placeholder.png" alt="" class="talk__picture" width="90" height="90">
-          {% endif %}
-        </div>
-        <h4 class="talk__header__text">
-          <span class="talk__name">{{talk.name}}</span>
-          <span class="talk__title">{{talk.title}}</span>
-        </h4>
-      </div>
-      <p>
-        {{talk.desc}}
-      </p>
-      <p class="talk__bio">
-        {{talk.bio}}
-      </p>
-      <ul class="talk__links">
-        {% for link in talk.links %}
-          <li><a href="{{link.url}}">{{link.title}}</a></li>
-        {% endfor %}
-      </ul>
-    </li>
-    {% endfor %}
-  </ul>
-  {% endif %}
+    {% if post.talks %}
+    <ul class="talk-list">
+      {% for talk in post.talks %}
+        {% include talk-item.html %}
+      {% endfor %}
+    </ul>
+    {% endif %}
 
   {{ post.content }}
 

@@ -1,0 +1,7 @@
+    {% if page.talks %}
+    <ul class="talk-list">
+      {% for talk in page.talks %}
+        {% include talk-item.html %}
+      {% endfor %}
+    </ul>
+    {% endif %}

@@ -1,0 +1,45 @@
+<li class="talk">
+  {% if talk.speakers.size > 1 %}
+    <h4 class="talk__title talk__title--shared">{{ talk.title }}</h4>
+  {% endif %}
+
+  {% if talk.desc and talk.speakers.size > 1 %}
+    <p>{{ talk.desc }}</p>
+  {% endif %}
+
+  {% for speaker in talk.speakers %}
+    <div class="talk__speaker">
+      <div class="talk__header">
+        <div class="talk__header__media">
+          {% if speaker.picture %}
+            <img src="/images/talks/{{ speaker.picture }}" alt="Picture of {{ speaker.name }}" class="talk__picture" width="90" height="90">
+          {% else %}
+            <img src="/images/talks/placeholder.png" alt="" class="talk__picture" width="90" height="90">
+          {% endif %}
+        </div>
+        <h4 class="talk__header__text">
+          <span class="talk__name">{{ speaker.name }}</span>
+          {% if talk.speakers.size == 1 %}
+            <span class="talk__title">{{ talk.title }}</span>
+          {% endif %}
+        </h4>
+      </div>
+
+      {% if talk.desc and talk.speakers.size == 1 %}
+        <p>{{ talk.desc }}</p>
+      {% endif %}
+
+      {% if speaker.bio %}
+        <p class="talk__bio">{{ speaker.bio }}</p>
+      {% endif %}
+
+      {% if speaker.links %}
+        <ul class="talk__links">
+          {% for link in speaker.links %}
+            <li><a href="{{ link.url }}">{{ link.title | strip }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  {% endfor %}
+</li>
