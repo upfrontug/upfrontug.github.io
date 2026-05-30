@@ -2,7 +2,8 @@
 
 Website for [Up.front](https://upfrontug.github.io/) — a Berlin meetup for the web design and frontend community (2010–2019).
 
-Built with [Jekyll 4](https://jekyllrb.com/) and plain CSS. Deployed via GitHub Actions to GitHub Pages.
+Built with [Jekyll 4](https://jekyllrb.com/) and plain CSS. 
+Deployed via GitHub Actions to GitHub Pages.
 
 ## Local development
 
@@ -27,8 +28,6 @@ After changing `_config.yml`, restart the Jekyll server.
 
 Pushes to the `gh-pages` branch trigger the [GitHub Actions workflow](.github/workflows/pages.yml), which builds the site with Jekyll 4.4 and deploys to GitHub Pages.
 
-**One-time setup** (if not done yet): in the repository settings under **Pages**, set **Source** to **GitHub Actions** (not “Deploy from a branch”).
-
 ## Project structure
 
 | Path | Purpose |
@@ -52,18 +51,21 @@ intro: >
   Short intro shown on the event page.
 meetup: "https://www.meetup.com/up-front-ug/events/…"
 talks:
-  - name: "Speaker Name"
-    title: "Talk title"
+  - title: "Talk title"
     desc: "Talk abstract."
-    bio: "Speaker bio."
-    picture: "speaker-slug.jpg"
-    links:
-      - title: "@handle"
-        url: "https://twitter.com/handle"
+    speakers:
+      - name: "Speaker Name"
+        bio: "Speaker bio."
+        picture: "speaker-slug.jpg"
+        links:
+          - title: "@handle"
+            url: "https://twitter.com/handle"
 ---
 ```
 
 Speaker photos go in `images/talks/`. The default event time is `7:45pm` (set in `_config.yml`).
+
+For talks with multiple speakers, keep `title` and `desc` on the talk and list each person under `speakers`. Single-speaker talks use the same shape with one entry in `speakers`.
 
 Browse existing posts in `_posts/` for examples.
 
