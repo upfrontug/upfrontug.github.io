@@ -1,0 +1,31 @@
+<ul id="speakers-list" class="speakers-grid">
+  {% for speaker in site.data.speakers %}
+    <li class="speaker-card">
+      {% if speaker.picture %}
+        <img src="/images/talks/{{ speaker.picture }}" alt="Picture of {{ speaker.name }}" class="speaker-card__photo" width="72" height="72" loading="lazy" decoding="async">
+      {% else %}
+        <img src="/images/talks/placeholder.png" alt="" class="speaker-card__photo" width="72" height="72" loading="lazy" decoding="async">
+      {% endif %}
+
+      <h4 class="speaker-card__name">{{ speaker.name }}</h4>
+
+      {% if speaker.links %}
+        <ul class="speaker-card__links">
+          {% for link in speaker.links %}
+            <li><a href="{{ link.url }}">{{ link.title | strip }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      <ul class="speaker-card__appearances">
+        {% for appearance in speaker.appearances %}
+          <li>
+            <a href="{{ appearance.url }}">
+              #{{ appearance.counter }} {{ appearance.date_label }}: {{ appearance.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </li>
+  {% endfor %}
+</ul>
