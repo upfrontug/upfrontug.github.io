@@ -1,14 +1,14 @@
 <head>
   <meta charset="utf-8" />
 
-  <title>up.front – Web design community in Berlin</title>
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta property="og:title" content="Up.front – Meetup for the web design and front end community in Berlin" />
   <meta property="og:type" content="example:usergroup" />
   <meta property="og:url" content="https://upfrontug.github.io/" />
-  <meta property="og:image" content="https://upfrontug.github.io//images/upfront-fb-cover-63.png" />
-  <meta property="og:site_name" content="/upfrontug.github.io/" />
+  <meta property="og:image" content="https://upfrontug.github.io/images/upfront-fb-cover-63.png" />
+  <meta property="og:site_name" content="{{ site.title }}" />
   <meta property="og:description" content="Upfront is a monthly meetup for the web design community in Berlin. Everyone is welcome to participate, either by attending or giving a talk themselves." />
 
   <link rel="stylesheet" href="https://use.typekit.net/jmd3prk.css">
@@ -16,11 +16,6 @@
   <meta name="keywords" content="UX, UI, community, Frontend, Design, Webdesign, HTML, CSS, Coding, web development, Usergroup, Berlin, meetup">
   <meta name="description" content="Upfront is a monthly meetup for the web design community in Berlin. Everyone is welcome to participate, either by attending or giving a talk themselves.">
   <link rel="author" href="/humans.txt" />
-
-  <style>
-    article, aside, dialog, figure, footer, header,
-    hgroup, menu, nav, section { display: block; }
-  </style>
 
   <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="/css/vars.css" type="text/css" media="screen, projection" />

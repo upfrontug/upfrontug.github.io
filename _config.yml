@@ -25,8 +25,8 @@ title: Upfront Meetup Berlin
 email: mail@kristinaschneider.com
 description: > # this means to ignore newlines until "baseurl:"
   "Upfront – Meetup for the web design and frontend community in Berlin"
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+url: "https://upfrontug.github.io"
 twitter_username: upfront_ug
 facebook_username:  up.front.ug
 
