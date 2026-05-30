@@ -555,7 +555,7 @@ ul.two > li.last {
   display: block;
   margin: 0;
   padding: 1em;
-  background: rgba(0, 0, 0, .25);
+  background: var(--grey--light);
   text-decoration: none;
 }
 
